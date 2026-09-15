@@ -19,6 +19,7 @@ The AUST 2D Engine (AUST 2D or AUST for short), is a passion project of a single
 1. Download the latest ZIP archive from the [Releases](../../releases) tab.
 2. Extract the archive to a folder of your choice.
 3. Run `AUST2D.exe`.
+4. If a window pops up with `File is from an unknown source / could be malicious`, click on `More Info` and `Run Anyway`. This is because the executable is not signed (which costs a lot to do).
 
 ---
 
