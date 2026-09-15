@@ -23,6 +23,16 @@ The AUST 2D Engine (AUST 2D or AUST for short), is a passion project of a single
 
 ---
 
+## Versioning
+
+AUST Engine releases follow a three-part versioning system (`Major.Minor.Hotfix`):
+
+* **Major (`M.0.0`):** Major changes, core system overhauls, etc. May change JSON schema formats, therefore backwards compatibility with older save files or mods cannot be guaranteed.
+* **Minor (`0.P.0`):** Feature additions. These should maintain backwards compatibility, though exceptional schema changes may happen.
+* **Hotfix (`0.0.H`):** Bug fixes. Guaranteed to maintain backwards compatibility.
+
+---
+
 ## Building from Source
 
 This project is built with C++20 using MSVC (Visual Studio 2022) on Windows. It has not yet been tested on GCC/Clang or other platforms.
