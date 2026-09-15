@@ -1,0 +1,12 @@
+{
+    "logging": {
+        "useLogging": true,
+        "logToFile": true,
+        "logToConsole": true,
+        "supressWrapTextWarning": true
+    },
+    "debug": {
+        "shouldPlayerBeInvisible": false
+    }
+}
+

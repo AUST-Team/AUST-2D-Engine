@@ -1,0 +1,45 @@
+{
+    "busses": [
+        "Master",
+        "Music",
+        "SFX",
+        "UI",
+        "Pause"
+    ],
+
+    "sounds": [
+        {
+            "name": "button_click",
+            "bus": "UI",
+            "file": "ui/click_002.ogg",
+            "playback": {
+                "volume": 0.1,
+                "loop": false,
+                "fadeIn": 0,
+                "loopCount": null
+            }
+        },
+        {
+            "name": "map1music",
+            "bus": "Music",
+            "file": "music/song.wav",
+            "playback": {
+                "volume": 0.05,
+                "loop": true,
+                "fadeIn": 0,
+                "loopCount": -1
+            }
+        },
+        {
+            "name": "checkbox_toggle",
+            "bus": "UI",
+            "file": "ui/tick_002.ogg",
+            "playback": {
+                "volume": 0.1,
+                "loop": false,
+                "fadeIn": 0,
+                "loopCount": null
+            }
+        }
+    ]
+}

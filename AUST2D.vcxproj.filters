@@ -1,0 +1,1792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{77db34c2-12ca-40fc-8016-9d928bc8c0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{8d21e7d9-5dd7-41f8-8b0b-dbdafeaee680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Assets">
+      <UniqueIdentifier>{e56d4c2d-c6ca-4366-96ce-4a1f55f78cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles">
+      <UniqueIdentifier>{471628b8-04a7-4d4f-8759-ec8932c7315b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{06263a31-dff8-4d64-b045-34a0870e6e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player">
+      <UniqueIdentifier>{732dcaeb-032a-4e64-80ff-594b84c6ec45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{4398b372-b58d-4c17-804e-ec1aa8b6f16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{ddba3477-bd09-4df1-b0e4-d9d6637731f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls\Commands">
+      <UniqueIdentifier>{d70fdc73-4acb-4e69-a9b7-762f7ed31980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameMap">
+      <UniqueIdentifier>{fb44b802-d294-430e-902f-3bde99f0942e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{4d1bf6c3-141c-4eaf-a0c5-cc111515173e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{815428b2-8f33-41ba-bec6-a878af7f323c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIButton">
+      <UniqueIdentifier>{0806657b-da03-4f0c-90f9-c31487a795b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIPanel">
+      <UniqueIdentifier>{064a4dd0-9565-4528-8446-efaa62362132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\FontManager">
+      <UniqueIdentifier>{ec0ad61c-97c8-46e5-a739-f653b919a770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UILabel">
+      <UniqueIdentifier>{7b4ef6b9-2423-4c05-af0d-cee90f12a343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Effects">
+      <UniqueIdentifier>{0f24c4c0-5f78-4842-b486-d534cd71591e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Effects\TypewriterEffect">
+      <UniqueIdentifier>{e5ec8bae-bfe1-4ab3-af0a-5989d2bcc9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UICutsceneTextWriter">
+      <UniqueIdentifier>{a79eceb7-19f6-463b-b6a5-cb72c377344d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard">
+      <UniqueIdentifier>{52cea797-27eb-4247-99db-de9be4991fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerTileMover">
+      <UniqueIdentifier>{fc438520-d84c-4b82-a6a2-20c751e5d71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardTileMover">
+      <UniqueIdentifier>{fbf0d239-c600-498d-b6d5-c3c930f643ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine">
+      <UniqueIdentifier>{84770bee-fa9d-4852-8eb0-26f6a2d551b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStateManager">
+      <UniqueIdentifier>{4a3c8d11-3a9e-42cd-804b-7b6cc035952c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates">
+      <UniqueIdentifier>{82cbcead-b12c-43ab-8d8d-b4bfb414200e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardIdleState">
+      <UniqueIdentifier>{39708044-bd98-411e-972c-086c126d2ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies">
+      <UniqueIdentifier>{c952ca5a-298d-474b-80e4-a5c676d5e8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardPatrolStrategy">
+      <UniqueIdentifier>{97207314-6cdb-4576-a8c5-72fcf63f960a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardFallbackState">
+      <UniqueIdentifier>{4dad2bce-4bc3-4301-a65e-cd329ad53df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardBehavior">
+      <UniqueIdentifier>{8a46d04a-5c2b-4960-8490-850e3547a7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardChaseState">
+      <UniqueIdentifier>{1b102991-4857-48e8-8191-829f6c4762d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardPatrolState">
+      <UniqueIdentifier>{fe642c29-a270-4f0e-987d-c40151dc5b3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardState">
+      <UniqueIdentifier>{5ab762d8-1eb6-4c39-a82c-a94296760f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Entity">
+      <UniqueIdentifier>{3079e70c-7bbf-45c7-8a3b-a7c5c8ddd74d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\TileMover">
+      <UniqueIdentifier>{85dde9ec-497a-4bb5-ab17-3c292415d79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardMoveState">
+      <UniqueIdentifier>{d0108fb8-43eb-41a7-acca-2fa84b920145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardDirectChaseStrategy">
+      <UniqueIdentifier>{578b5755-53fa-4b33-a431-4a445e1c5823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous">
+      <UniqueIdentifier>{994b0395-5d79-4ca1-a062-dd6070639749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Direction">
+      <UniqueIdentifier>{f7f45b76-81a8-40d5-815b-09e82f0835da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs">
+      <UniqueIdentifier>{1b4e76db-80a0-47f9-b935-a0cbeb6100d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardSearchState">
+      <UniqueIdentifier>{574f45d2-695d-4aac-b8ca-339a36f796e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies">
+      <UniqueIdentifier>{d82b172a-8a8c-4e8b-a5aa-8f09400c9e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardMoveToLastTileStrategy">
+      <UniqueIdentifier>{445be80f-8ec3-45f6-8fbe-306a3b5a70b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardSearchStrategyProgressTracker">
+      <UniqueIdentifier>{3e565ba6-f392-47cc-a6ad-4128f173e91a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardFollowDirectionStrategy">
+      <UniqueIdentifier>{d76d5003-dcc6-4015-87f1-ca5d16a6e463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardRandomSearchStrategy">
+      <UniqueIdentifier>{0ca39006-1233-4e68-985d-95f6c934e61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardCooldownState">
+      <UniqueIdentifier>{3ed66d70-223e-4480-891f-bcd29621496d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Size">
+      <UniqueIdentifier>{c078cae7-b7aa-4b86-b019-0d754b829c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardManager">
+      <UniqueIdentifier>{61e8aa48-5eb0-46b2-987e-556c502b1117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\DialogueSystem">
+      <UniqueIdentifier>{c8af736b-6840-4293-b832-198888ed7695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIDialogue">
+      <UniqueIdentifier>{7fc8e445-04bd-4e30-9646-6eef3f09c949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable">
+      <UniqueIdentifier>{bb22c67c-e68b-4e52-a550-b56e59231316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerStrategyManager">
+      <UniqueIdentifier>{0e91efbe-aa41-47e7-8bb7-18556eda368a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerStrategies">
+      <UniqueIdentifier>{34eb3ab1-9948-4089-87d7-496aa7133d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls\Commands\MoveCommand">
+      <UniqueIdentifier>{f3dc3d29-26c4-4802-b38e-21c3c9298f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls\Commands\TogglePauseCommand">
+      <UniqueIdentifier>{6cf3ae61-222f-442c-89e6-cc7ec6988106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls\Commands\InteractCommand">
+      <UniqueIdentifier>{472edc6d-41fe-444c-bf13-aa6352c2fc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerStrategies\PlayerDialogueStrategy">
+      <UniqueIdentifier>{98a242b2-6211-4931-a257-0501efa1e732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement">
+      <UniqueIdentifier>{0c0f41ac-2a10-478e-8c5b-ceeef3b83079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UICachedTextElement">
+      <UniqueIdentifier>{0b5cfad9-81cf-454a-9a45-753d9392da01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UICachedTextureElement">
+      <UniqueIdentifier>{d5f3f647-1b19-4c24-bdc4-d9239bdc85db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UITextElement">
+      <UniqueIdentifier>{69b5a20b-8e74-4251-bbec-a44546c3fd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UIElement">
+      <UniqueIdentifier>{b7917e71-c9a2-476c-a0a6-904983617967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerStrategies\PlayerCaughtStrategy">
+      <UniqueIdentifier>{9c8cb410-4eb0-454e-a655-bc5f3a6f5485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Dialogue">
+      <UniqueIdentifier>{9c839667-071f-4605-b52e-19bcc855830d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UITextStyleElement">
+      <UniqueIdentifier>{0461ac99-5735-4f98-9703-540b1fd0f271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIBaseElement\UITextAlignment">
+      <UniqueIdentifier>{c9f18c2e-2258-45d8-aab2-aa4fd41abd3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UILabel\UILabelMasked">
+      <UniqueIdentifier>{3d6a307f-2438-4e32-92d9-4ab5fd48bf54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UILabel\UILabelPool">
+      <UniqueIdentifier>{85687c3a-3594-4d5f-8afa-4308460f5f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIDialogue\DialogueStates">
+      <UniqueIdentifier>{5a37faa3-68a5-41a0-adaa-59c9c8257957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIDialogue\DialogueStates\DialogueNarrationState">
+      <UniqueIdentifier>{73c5eab9-d3db-429f-8e0e-ee6baa387cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIDialogue\DialogueStates\DialogueState">
+      <UniqueIdentifier>{0d77f991-2d43-4686-8b6b-35761d9100d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIDialogue\DialogueStates\DialogueChoiceState">
+      <UniqueIdentifier>{063413ba-8b82-4d24-877c-ef1975d05596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIImage">
+      <UniqueIdentifier>{0d943fba-0435-461b-b56a-37479c42dae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable\DialogueNarrationInteractable">
+      <UniqueIdentifier>{0228959b-ce6c-4615-951a-e5c1f441f6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable\DialogueChoiceInteractable">
+      <UniqueIdentifier>{90ef4c08-22f6-4ce1-a63f-30bcd6a227da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\ScoreManager">
+      <UniqueIdentifier>{e3558ec5-f2e5-4839-88f5-b7bd3184e715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine">
+      <UniqueIdentifier>{3f43a63a-c691-4380-90f5-1b1346d6c33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates">
+      <UniqueIdentifier>{bb59a666-873a-45eb-9307-464504710e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\MainMenuState">
+      <UniqueIdentifier>{ea2a39a6-26d7-4d7c-970a-2c67ac32993f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\GameState">
+      <UniqueIdentifier>{06c10d41-d8f6-4611-8804-1e79aba91072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\PauseMenuState">
+      <UniqueIdentifier>{60e99029-e566-4ee7-9900-03724d195b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\CutsceneState">
+      <UniqueIdentifier>{e7ff34f9-0545-4287-8d27-9ce357d69e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\AppState">
+      <UniqueIdentifier>{9f63a8b6-49be-413a-b395-6d54f5b8d630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStateManager">
+      <UniqueIdentifier>{4ce06514-6349-4585-b344-17c43e47ee0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UITextField">
+      <UniqueIdentifier>{da921818-a433-4950-b745-38eefb60a608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameTime">
+      <UniqueIdentifier>{51c5812c-6118-4792-be71-23d1a8c28910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UITable">
+      <UniqueIdentifier>{8b7f3dab-e33a-4f65-aaac-7304c397b658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UITable\UITableColumn">
+      <UniqueIdentifier>{2af6271c-f6ec-48bd-a041-e2fc7409a3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UILabel\UILabelCheckbox">
+      <UniqueIdentifier>{0ec9d629-aee9-46b8-9aaf-e2c6f44f89a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager">
+      <UniqueIdentifier>{66f5a461-9fe7-4245-98c8-0b4349ba59e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager\GameSaveData">
+      <UniqueIdentifier>{ee48c5a8-2861-4f1d-96bb-67d5aadee9de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileRegistry">
+      <UniqueIdentifier>{30b2968a-b515-460d-9239-54c1405f3fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameMap\Map">
+      <UniqueIdentifier>{c9919ce0-4276-47fc-bc25-698f7b7a1c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\FlagManager">
+      <UniqueIdentifier>{1bd45b26-a224-4464-b26a-ce9f381d85f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable\InteractableFactory">
+      <UniqueIdentifier>{1b9c2df1-0428-40c6-97dd-a13605ed2a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameMap\MapLoadStrategies">
+      <UniqueIdentifier>{21ba165b-7c88-4693-be06-556e8c9240fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameMap\MapLoadStrategies\MapSaveLoadStrategy">
+      <UniqueIdentifier>{758dd142-4207-43f1-9dec-a704e9320796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable\EventInteractable">
+      <UniqueIdentifier>{e2b3086d-5276-4a4a-b52b-270f04396149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers">
+      <UniqueIdentifier>{1a43fc77-4136-41b6-9c24-73f7f5e9bb75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardPathStrategy">
+      <UniqueIdentifier>{d8ef9a7b-a72c-4a09-bdc1-8522e1f4d0cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardPathChaseStrategy">
+      <UniqueIdentifier>{402f8da8-cc66-4382-8794-9f85939a4ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding">
+      <UniqueIdentifier>{b44d912a-0f1c-4d08-a905-0bd78bfd9b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding\GridNodePool">
+      <UniqueIdentifier>{32221c9e-ca85-45cf-bf8d-33ff0ed8b050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding\AStar">
+      <UniqueIdentifier>{c676aa00-7a54-487a-9f8b-84909892aa6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding\Path">
+      <UniqueIdentifier>{0e703205-7c1a-4e04-91c0-aed6896f6089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding\Node">
+      <UniqueIdentifier>{4be24f72-c480-4c4f-844e-28b7644a30c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\VisionRange">
+      <UniqueIdentifier>{d68e7590-3df2-4f72-8b7f-a31638c1417d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Trigger">
+      <UniqueIdentifier>{21e3af62-d4c7-4c75-8031-683704f29edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Interactable\MapTransitionInteractable">
+      <UniqueIdentifier>{d421f9f4-9f83-49e3-89d4-06c94828bf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls\Commands\Command">
+      <UniqueIdentifier>{ca71b315-db6a-4db7-b514-3ad8035b918d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Pathfinding\JPS">
+      <UniqueIdentifier>{407bdde9-75db-463c-8be9-409fb1cf8b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\TriggerFactory">
+      <UniqueIdentifier>{e066f25e-c428-4453-9f42-b07e5df2ac15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions">
+      <UniqueIdentifier>{bbbff0aa-4ddc-43af-9cec-676bff39a94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\SteppedOnCondition">
+      <UniqueIdentifier>{415d28fb-0593-4cac-98aa-c128286e6086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\FacingCondition">
+      <UniqueIdentifier>{8248b3c2-040a-4ff9-96fa-f28a99de1037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\ActivationExpression">
+      <UniqueIdentifier>{59294a9b-d68b-46ca-9730-14b49f283346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionRegistry">
+      <UniqueIdentifier>{56d711a6-8f80-4123-99ec-6f21b7afe868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionKey">
+      <UniqueIdentifier>{e3eca694-3fbc-4286-92d3-4fdcb7bb79ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionKey\ConditionType">
+      <UniqueIdentifier>{96f04469-b5fb-49ea-bdd7-affb9e32d59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ProximityCondition">
+      <UniqueIdentifier>{0730da76-26e4-4dde-bdc4-bd2fca8e1605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\InteractCondition">
+      <UniqueIdentifier>{95601b2f-b76f-4ff4-8c7a-6298da4c5468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionFactory">
+      <UniqueIdentifier>{3bf8ad96-8f78-4c76-b5bd-d5018b264d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\Condition">
+      <UniqueIdentifier>{50d4fb05-eee1-4d2d-89b0-11eeedab7880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\CompositeCondition">
+      <UniqueIdentifier>{e1fbcbe1-3ac5-49ae-b17e-2a822e8095fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\SpatialBuckets">
+      <UniqueIdentifier>{7b70fc3e-8804-4a56-b1c8-c833d5f12795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\TriggerRegistry">
+      <UniqueIdentifier>{d405a14c-d04c-4ee9-8b5c-ec0757bf3d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\RenderSystems">
+      <UniqueIdentifier>{4cceefa4-9f3e-4fc2-ab8e-1dd0cc5e19f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\RenderSystems\GameRenderSystem">
+      <UniqueIdentifier>{d07820e4-4480-4f2a-81d0-03ff2796012c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\RenderSystems\AppRenderSystem">
+      <UniqueIdentifier>{70bfc18c-1c37-4925-94ab-32d2dec1b951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\RenderSystems\GameRenderSystem\RenderLayer">
+      <UniqueIdentifier>{8a1a117f-cd77-45c2-b67e-93e9055b0579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager\GameSaveData\TriggerSaveData">
+      <UniqueIdentifier>{d79367e0-f1a8-480a-8e12-cb2e91bac9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager\GameSaveData\GuardSaveData">
+      <UniqueIdentifier>{54345c5c-c60d-49f6-93dd-2b769c8ca189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager\GameSaveData\TileSaveData">
+      <UniqueIdentifier>{65b0119d-efa7-4ce9-bbe2-3f4591bf11ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SaveManager\GameSaveData\PresetSaveData">
+      <UniqueIdentifier>{4d860813-269b-4918-958d-fd636ea9822d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UITileImage">
+      <UniqueIdentifier>{bbfae287-a0c2-49d7-903a-7fa18b0e4a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations">
+      <UniqueIdentifier>{72be5542-bc58-4371-8e2b-109c876bf95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationState">
+      <UniqueIdentifier>{12b29e46-8afb-4333-a813-368cb6ddd0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationSystem">
+      <UniqueIdentifier>{3cb2cf5c-8884-45bd-925c-9496000368e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationClip">
+      <UniqueIdentifier>{51f3737d-414e-43bd-ab30-8c4387e5a3b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationOverrides">
+      <UniqueIdentifier>{a7e1a0f8-48ea-4c72-8cc2-b862f3a6f7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationOverrides\SemiAnimationOverride">
+      <UniqueIdentifier>{0c6d6048-7879-45bc-a660-2332e2fb41ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationOverrides\FullAnimationOverride">
+      <UniqueIdentifier>{d4abc55e-68fc-4ded-879c-8dd46bc2a78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\Animations\AnimationOverrides\AnimationOverrideView">
+      <UniqueIdentifier>{80345dc5-51ce-44c3-a911-3616d29c1950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileStructs">
+      <UniqueIdentifier>{42f0ea38-8275-4de3-a78d-e69a196fd06b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileStructs\TilePlacementMode">
+      <UniqueIdentifier>{dea4652f-cf06-4191-ae54-3af662833c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileStructs\TileAnchorInstance">
+      <UniqueIdentifier>{52271a3e-e8c7-42f0-80b8-0fe2d83ce2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{c0a3ee0a-cf76-496d-b8e8-6149e5442a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioBackend">
+      <UniqueIdentifier>{c0b3996d-0543-4586-abf1-0f3283e5afa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioAsset">
+      <UniqueIdentifier>{d3e88354-72ec-4020-ba0d-73bbea5eceb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioTrack">
+      <UniqueIdentifier>{b25bcbc4-0148-4b85-b976-3ca7db316104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioBus">
+      <UniqueIdentifier>{5920d047-27a2-4f2f-9604-31b4aa61552a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioPlaybackOptions">
+      <UniqueIdentifier>{90c786b1-96c9-48a7-b6bf-6c77ca926c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\AudioSystem">
+      <UniqueIdentifier>{7b750247-da8a-478f-b780-0d938cd638e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Audio">
+      <UniqueIdentifier>{263d0ddd-a58b-4125-b60e-78b0c5c23b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Configuration">
+      <UniqueIdentifier>{1e07addb-f6ee-46b4-9fb4-5e23743edc64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Configuration\ConfigurationStructures">
+      <UniqueIdentifier>{914cf5ca-cc65-43b0-b329-d22ade13f23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Configuration\ConfigurationStructures\GuardConfiguration">
+      <UniqueIdentifier>{367d5d04-0c95-48bb-b6d2-9df941e3d5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Audio\AudioAction">
+      <UniqueIdentifier>{3a8518da-657e-45c7-b279-e06cb30e9e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Audio\AudioTargetType">
+      <UniqueIdentifier>{993f2be1-cc03-4d6f-a770-bdd5939e7edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Audio\AudioCommand">
+      <UniqueIdentifier>{6dfc793e-f23d-42a5-88b2-2c7727be4622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Audio\AudioCommand\AudioCommandOptions">
+      <UniqueIdentifier>{b17318ee-eb78-4650-9344-b2284fb81122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileReactionType">
+      <UniqueIdentifier>{8a291f0e-ef85-4183-8cc8-52fff6e8449a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Tiles\TileStructs\TileAudio">
+      <UniqueIdentifier>{968d2540-e4d1-4b56-86b5-e4a93076e483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{d0bea16b-532f-445b-80dc-921e256008ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionKey\TimedConditionType">
+      <UniqueIdentifier>{8e8314f9-03b0-45f6-998b-da068cd33074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\ConditionKey\FacingConditionType">
+      <UniqueIdentifier>{5753294a-b536-449f-a261-9d95f1e4ecad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\TimedCondition">
+      <UniqueIdentifier>{1f545cdb-68ce-4e26-b86e-28ed00503b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\CooldownCondition">
+      <UniqueIdentifier>{5a3c4eea-32e2-4052-b830-74d94f6d76ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Triggers\Conditions\MaxActivationsCondition">
+      <UniqueIdentifier>{70c6f8b3-3a00-4f50-bcc1-7732c98678ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\ModManager">
+      <UniqueIdentifier>{80ea60a8-a367-4a72-ab1f-9c253c09b4d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Logging">
+      <UniqueIdentifier>{276a546e-7a11-4b17-a914-00856c6df880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UIFactory">
+      <UniqueIdentifier>{c814bb2e-93ee-4c0f-b793-70d4b75c37c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\FileLoader">
+      <UniqueIdentifier>{2f6406cf-cdfe-4658-91b0-c4aed5383fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\JSONParser">
+      <UniqueIdentifier>{47e513d6-f3d6-4e9d-8738-bf9eadd5c087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\DataProvider">
+      <UniqueIdentifier>{30ab4992-40db-4052-a4e1-a62276baf5ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\SystemValueRegistry">
+      <UniqueIdentifier>{179e9998-f946-4a59-9956-383b46d2549a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\SettingsManager">
+      <UniqueIdentifier>{91bedce7-1bd6-4e64-9c10-4b6571783759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UISaveSlot">
+      <UniqueIdentifier>{d5ee9ba1-611d-4fe7-b10f-ec0ae35bb789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\UISaveSlot\SaveSlotMode">
+      <UniqueIdentifier>{cb50471f-dbe1-42e3-a59b-6bdee919414a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs\ArrayMiscs">
+      <UniqueIdentifier>{ea478362-d1ae-4e40-a826-67485924b966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs\EnumMiscs">
+      <UniqueIdentifier>{1093fe17-c358-4ace-9a0a-94c4838a1c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs\StringMiscs">
+      <UniqueIdentifier>{99271753-9414-4cbf-bfed-f6dc88d78e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs\SDLMiscs">
+      <UniqueIdentifier>{d816e0f1-f8cf-486c-a044-d68cd8edfe24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Miscs\IOMiscs">
+      <UniqueIdentifier>{1b44c166-a1ff-46b8-b2cb-3a3ba9b7e214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Player\PlayerStrategies\PlayerStrategy">
+      <UniqueIdentifier>{3035174f-7e94-43ac-bbb5-4895c6ea1441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppStateMachine\AppStates\MenuUIState">
+      <UniqueIdentifier>{2eff2869-e4c4-48ac-957e-7ad3ce39fe15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous\Dialogue\DialogueType">
+      <UniqueIdentifier>{d19dc70a-79dc-4df8-a451-9c4994236226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameActionRegistry">
+      <UniqueIdentifier>{6c6c8108-01d9-4139-8552-ae863c6cf91f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\SystemActionRegistry">
+      <UniqueIdentifier>{fee4ad0e-599a-4a08-839d-7b5d8b98dd79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Guard\GuardStrategies\GuardStrategy">
+      <UniqueIdentifier>{76b6eeeb-b876-4be2-859d-5e17a0ec51ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Assets.cpp">
+      <Filter>Source Files\Graphics\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source Files\Characters\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerTileMover.cpp">
+      <Filter>Source Files\Characters\Player\PlayerTileMover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyManager.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameMap.cpp">
+      <Filter>Source Files\Game\GameMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppStateManager.cpp">
+      <Filter>Source Files\AppStateMachine\AppStateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainMenuState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\MainMenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Direction.cpp">
+      <Filter>Source Files\Miscellaneous\Direction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIButton.cpp">
+      <Filter>Source Files\UI\UIButton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIPanel.cpp">
+      <Filter>Source Files\UI\UIPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FontManager.cpp">
+      <Filter>Source Files\Graphics\FontManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UILabel.cpp">
+      <Filter>Source Files\UI\UILabel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TypewriterEffect.cpp">
+      <Filter>Source Files\UI\Effects\TypewriterEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextEffectSystem.cpp">
+      <Filter>Source Files\UI\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\AppState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PauseMenuState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\PauseMenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UICutsceneTextWriter.cpp">
+      <Filter>Source Files\UI\UICutsceneTextWriter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CutsceneState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\CutsceneState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Guard.cpp">
+      <Filter>Source Files\Characters\Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardTileMover.cpp">
+      <Filter>Source Files\Characters\Guard\GuardTileMover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardStateManager.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardIdleChangeState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardIdleState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardPatrolStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPatrolStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardFallbackState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardFallbackState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardBehavior.h">
+      <Filter>Source Files\Characters\Guard\GuardBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardBehavior.cpp">
+      <Filter>Source Files\Characters\Guard\GuardBehavior</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardChaseState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardChaseState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity.cpp">
+      <Filter>Source Files\Characters\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardPatrolState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardPatrolState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileMover.cpp">
+      <Filter>Source Files\Characters\TileMover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardMoveState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardDirectChaseStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardDirectChaseStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Miscs.cpp">
+      <Filter>Source Files\Miscellaneous\Miscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardSearchState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardSearchState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardMoveToLastTileStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardMoveToLastTileStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardSearchStrategyProgressTracker.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardSearchStrategyProgressTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardFollowDirectionStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardFollowDirectionStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardRandomSearchStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardRandomSearchStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardCooldownState.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardCooldownState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Size.cpp">
+      <Filter>Source Files\Miscellaneous\Size</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardManager.cpp">
+      <Filter>Source Files\Characters\Guard\GuardManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueSystem.cpp">
+      <Filter>Source Files\Game\DialogueSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIDialogue.cpp">
+      <Filter>Source Files\UI\UIDialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueNarrationInteractable.cpp">
+      <Filter>Source Files\Game\Interactable\DialogueNarrationInteractable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerStrategyManager.cpp">
+      <Filter>Source Files\Characters\Player\PlayerStrategyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MoveCommand.cpp">
+      <Filter>Source Files\Controls\Commands\MoveCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TogglePauseCommand.cpp">
+      <Filter>Source Files\Controls\Commands\TogglePauseCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InteractCommand.cpp">
+      <Filter>Source Files\Controls\Commands\InteractCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerDialogueStrategy.cpp">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerDialogueStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UICachedTextElement.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UICachedTextElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UICachedTextureElement.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UICachedTextureElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextElement.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UITextElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIElement.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UIElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerCaughtStrategy.cpp">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerCaughtStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueBankManager.cpp">
+      <Filter>Source Files\Miscellaneous\Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextStyleElement.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UITextStyleElement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextAlignment.cpp">
+      <Filter>Source Files\UI\UIBaseElement\UITextAlignment</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UILabelMasked.cpp">
+      <Filter>Source Files\UI\UILabel\UILabelMasked</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UILabelPool.cpp">
+      <Filter>Source Files\UI\UILabel\UILabelPool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueNarrationState.cpp">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueNarrationState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueState.cpp">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueChoiceState.cpp">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueChoiceState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIImage.cpp">
+      <Filter>Source Files\UI\UIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueChoiceInteractable.cpp">
+      <Filter>Source Files\Game\Interactable\DialogueChoiceInteractable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScoreManager.cpp">
+      <Filter>Source Files\Game\ScoreManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextField.cpp">
+      <Filter>Source Files\UI\UITextField</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameTime.cpp">
+      <Filter>Source Files\Game\GameTime</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITable.cpp">
+      <Filter>Source Files\UI\UITable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITableColumn.cpp">
+      <Filter>Source Files\UI\UITable\UITableColumn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UILabelCheckbox.cpp">
+      <Filter>Source Files\UI\UILabel\UILabelCheckbox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameSaveData.cpp">
+      <Filter>Source Files\Game\SaveManager\GameSaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SaveManager.cpp">
+      <Filter>Source Files\Game\SaveManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapSaveLoadStrategy.cpp">
+      <Filter>Source Files\Game\GameMap\MapLoadStrategies\MapSaveLoadStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileRegistry.cpp">
+      <Filter>Source Files\Graphics\Tiles\TileRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cpp">
+      <Filter>Source Files\Game\GameMap\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameActionRegistry.cpp">
+      <Filter>Source Files\Game\GameActionRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FlagManager.cpp">
+      <Filter>Source Files\Game\FlagManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InteractableFactory.cpp">
+      <Filter>Source Files\Game\Interactable\InteractableFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventInteractable.cpp">
+      <Filter>Source Files\Game\Interactable\EventInteractable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GridNodePool.cpp">
+      <Filter>Source Files\Game\Pathfinding\GridNodePool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AStar.cpp">
+      <Filter>Source Files\Game\Pathfinding\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pathfinding.cpp">
+      <Filter>Source Files\Game\Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardPathStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPathStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardPathChaseStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPathChaseStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trigger.cpp">
+      <Filter>Source Files\Game\Triggers\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapTransitionInteractable.cpp">
+      <Filter>Source Files\Game\Interactable\MapTransitionInteractable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JPS.cpp">
+      <Filter>Source Files\Game\Pathfinding\JPS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerFactory.cpp">
+      <Filter>Source Files\Game\Triggers\TriggerFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConditionKey.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConditionType.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\ConditionType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FacingConditionType.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\FacingConditionType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FacingConditionType.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\FacingConditionType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SteppedOnCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\SteppedOnCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FacingCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\FacingCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ActivationExpression.cpp">
+      <Filter>Source Files\Game\Triggers\ActivationExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CompositeCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\CompositeCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConditionRegistry.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProximityCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ProximityCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InteractCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\InteractCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConditionFactory.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Condition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VisionRange.cpp">
+      <Filter>Source Files\Miscellaneous\VisionRange</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpatialBuckets.cpp">
+      <Filter>Source Files\Miscellaneous\SpatialBuckets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerRegistry.cpp">
+      <Filter>Source Files\Game\Triggers\TriggerRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppRenderSystem.cpp">
+      <Filter>Source Files\Graphics\RenderSystems\AppRenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameRenderSystem.cpp">
+      <Filter>Source Files\Graphics\RenderSystems\GameRenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderLayer.cpp">
+      <Filter>Source Files\Graphics\RenderSystems\GameRenderSystem\RenderLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TilePlacementMode.cpp">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TilePlacementMode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerSaveData.cpp">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\TriggerSaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardSaveData.cpp">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\GuardSaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileSaveData.cpp">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\TileSaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PresetSaveData.cpp">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\PresetSaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITileImage.cpp">
+      <Filter>Source Files\UI\UITileImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimationState.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileReactionType.cpp">
+      <Filter>Source Files\Graphics\Tiles\TileReactionType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimationSystem.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimationClip.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationClip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SemiAnimationOverride.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\SemiAnimationOverride</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FullAnimationOverride.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\FullAnimationOverride</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimationOverrideView.cpp">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\AnimationOverrideView</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileAnchorInstance.cpp">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TileAnchorInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioSystem.cpp">
+      <Filter>Source Files\Audio\AudioSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioBackend.cpp">
+      <Filter>Source Files\Audio\AudioBackend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioAsset.cpp">
+      <Filter>Source Files\Audio\AudioAsset</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioTrack.cpp">
+      <Filter>Source Files\Audio\AudioTrack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioBus.cpp">
+      <Filter>Source Files\Audio\AudioBus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioPlaybackOptions.cpp">
+      <Filter>Source Files\Audio\AudioPlaybackOptions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio.cpp">
+      <Filter>Source Files\Miscellaneous\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Configuration.cpp">
+      <Filter>Source Files\Miscellaneous\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardConfiguration.cpp">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures\GuardConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioAction.cpp">
+      <Filter>Source Files\Miscellaneous\Audio\AudioAction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioTargetType.cpp">
+      <Filter>Source Files\Miscellaneous\Audio\AudioTargetType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioCommandOptions.cpp">
+      <Filter>Source Files\Miscellaneous\Audio\AudioCommand\AudioCommandOptions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileAudio.cpp">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TileAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryTracker.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimedConditionType.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\TimedConditionType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimedCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\TimedCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CooldownCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\CooldownCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MaxActivationsCondition.cpp">
+      <Filter>Source Files\Game\Triggers\Conditions\MaxActivationsCondition</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModManager.cpp">
+      <Filter>Source Files\Game\ModManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logging.cpp">
+      <Filter>Source Files\Miscellaneous\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIFactory.cpp">
+      <Filter>Source Files\UI\UIFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MenuUIState.cpp">
+      <Filter>Source Files\AppStateMachine\AppStates\MenuUIState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileLoader.cpp">
+      <Filter>Source Files\Miscellaneous\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JSONParser.cpp">
+      <Filter>Source Files\Miscellaneous\JSONParser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataProvider.cpp">
+      <Filter>Source Files\Miscellaneous\DataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemValueRegistry.cpp">
+      <Filter>Source Files\Miscellaneous\SystemValueRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SettingsManager.cpp">
+      <Filter>Source Files\Miscellaneous\SettingsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UISaveSlot.cpp">
+      <Filter>Source Files\UI\UISaveSlot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SaveSlotMode.cpp">
+      <Filter>Source Files\UI\UISaveSlot\SaveSlotMode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StringMiscs.cpp">
+      <Filter>Source Files\Miscellaneous\Miscs\StringMiscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDL_PointOperators.h">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDL_ColorOperators.h">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDLMiscs.cpp">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IOMiscs.cpp">
+      <Filter>Source Files\Miscellaneous\Miscs\IOMiscs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerStrategy.cpp">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemActionRegistry.cpp">
+      <Filter>Source Files\Game\SystemActionRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogueType.cpp">
+      <Filter>Source Files\Miscellaneous\Dialogue\DialogueType</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GuardStrategy.cpp">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardStrategy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Assets.h">
+      <Filter>Source Files\Graphics\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source Files\Characters\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Source Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerTileMover.h">
+      <Filter>Source Files\Characters\Player\PlayerTileMover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyManager.h">
+      <Filter>Source Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameMap.h">
+      <Filter>Source Files\Game\GameMap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppStateManager.h">
+      <Filter>Source Files\AppStateMachine\AppStateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainMenuState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\MainMenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Direction.h">
+      <Filter>Source Files\Miscellaneous\Direction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIButton.h">
+      <Filter>Source Files\UI\UIButton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIPanel.h">
+      <Filter>Source Files\UI\UIPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FontManager.h">
+      <Filter>Source Files\Graphics\FontManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UILabel.h">
+      <Filter>Source Files\UI\UILabel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TypewriterEffect.h">
+      <Filter>Source Files\UI\Effects\TypewriterEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITextEffectSystem.h">
+      <Filter>Source Files\UI\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\AppState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PauseMenuState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\PauseMenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UICutsceneTextWriter.h">
+      <Filter>Source Files\UI\UICutsceneTextWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CutsceneState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\CutsceneState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Guard.h">
+      <Filter>Source Files\Characters\Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardTileMover.h">
+      <Filter>Source Files\Characters\Guard\GuardTileMover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardStateManager.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardIdleChangeState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardIdleState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Observer.h">
+      <Filter>Source Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardPatrolStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPatrolStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardFallbackState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardFallbackState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardChaseState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardChaseState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>Source Files\Characters\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardPatrolState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardPatrolState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileMover.h">
+      <Filter>Source Files\Characters\TileMover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardMoveState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardDirectChaseStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardDirectChaseStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Miscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardSearchState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardSearchState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardMoveToLastTileStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardMoveToLastTileStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardSearchStrategyProgressTracker.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardSearchStrategyProgressTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardFollowDirectionStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardFollowDirectionStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardRandomSearchStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardSearchStrategies\GuardRandomSearchStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardCooldownState.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardCooldownState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Size.h">
+      <Filter>Source Files\Miscellaneous\Size</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardManager.h">
+      <Filter>Source Files\Characters\Guard\GuardManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueSystem.h">
+      <Filter>Source Files\Game\DialogueSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIDialogue.h">
+      <Filter>Source Files\UI\UIDialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Interactable.h">
+      <Filter>Source Files\Game\Interactable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueNarrationInteractable.h">
+      <Filter>Source Files\Game\Interactable\DialogueNarrationInteractable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerStrategyManager.h">
+      <Filter>Source Files\Characters\Player\PlayerStrategyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MoveCommand.h">
+      <Filter>Source Files\Controls\Commands\MoveCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TogglePauseCommand.h">
+      <Filter>Source Files\Controls\Commands\TogglePauseCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InteractCommand.h">
+      <Filter>Source Files\Controls\Commands\InteractCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerDialogueStrategy.h">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerDialogueStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardStateType.h">
+      <Filter>Source Files\Characters\Guard\GuardStateMachine\GuardStates\GuardState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UICachedTextElement.h">
+      <Filter>Source Files\UI\UIBaseElement\UICachedTextElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UICachedTextureElement.h">
+      <Filter>Source Files\UI\UIBaseElement\UICachedTextureElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITextElement.h">
+      <Filter>Source Files\UI\UIBaseElement\UITextElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIElement.h">
+      <Filter>Source Files\UI\UIBaseElement\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerCaughtStrategy.h">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerCaughtStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueBankManager.h">
+      <Filter>Source Files\Miscellaneous\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITextStyleElement.h">
+      <Filter>Source Files\UI\UIBaseElement\UITextStyleElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITextAlignment.h">
+      <Filter>Source Files\UI\UIBaseElement\UITextAlignment</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UILabelMasked.h">
+      <Filter>Source Files\UI\UILabel\UILabelMasked</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UILabelPool.h">
+      <Filter>Source Files\UI\UILabel\UILabelPool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueNarrationState.h">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueNarrationState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueState.h">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueChoiceState.h">
+      <Filter>Source Files\UI\UIDialogue\DialogueStates\DialogueChoiceState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIImage.h">
+      <Filter>Source Files\UI\UIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueChoiceInteractable.h">
+      <Filter>Source Files\Game\Interactable\DialogueChoiceInteractable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScoreManager.h">
+      <Filter>Source Files\Game\ScoreManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITextField.h">
+      <Filter>Source Files\UI\UITextField</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameTime.h">
+      <Filter>Source Files\Game\GameTime</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITable.h">
+      <Filter>Source Files\UI\UITable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITableColumn.h">
+      <Filter>Source Files\UI\UITable\UITableColumn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UILabelCheckbox.h">
+      <Filter>Source Files\UI\UILabel\UILabelCheckbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SaveManager.h">
+      <Filter>Source Files\Game\SaveManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameSaveData.h">
+      <Filter>Source Files\Game\SaveManager\GameSaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapLoadStrategy.h">
+      <Filter>Source Files\Game\GameMap\MapLoadStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapSaveLoadStrategy.h">
+      <Filter>Source Files\Game\GameMap\MapLoadStrategies\MapSaveLoadStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileRegistry.h">
+      <Filter>Source Files\Graphics\Tiles\TileRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map.h">
+      <Filter>Source Files\Game\GameMap\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameActionRegistry.h">
+      <Filter>Source Files\Game\GameActionRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FlagManager.h">
+      <Filter>Source Files\Game\FlagManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InteractableFactory.h">
+      <Filter>Source Files\Game\Interactable\InteractableFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventInteractable.h">
+      <Filter>Source Files\Game\Interactable\EventInteractable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GridNodePool.h">
+      <Filter>Source Files\Game\Pathfinding\GridNodePool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AStar.h">
+      <Filter>Source Files\Game\Pathfinding\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Path.h">
+      <Filter>Source Files\Game\Pathfinding\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pathfinding.h">
+      <Filter>Source Files\Game\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Node.h">
+      <Filter>Source Files\Game\Pathfinding\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PathStrategy.h">
+      <Filter>Source Files\Game\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardPathStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPathStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardPathChaseStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardPathChaseStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VisionRange.h">
+      <Filter>Source Files\Miscellaneous\VisionRange</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trigger.h">
+      <Filter>Source Files\Game\Triggers\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapTransitionInteractable.h">
+      <Filter>Source Files\Game\Interactable\MapTransitionInteractable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapUpdateFlags.h">
+      <Filter>Source Files\Game\GameMap\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Command.h">
+      <Filter>Source Files\Controls\Commands\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommandType.h">
+      <Filter>Source Files\Controls\Commands\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JPS.h">
+      <Filter>Source Files\Game\Pathfinding\JPS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerFactory.h">
+      <Filter>Source Files\Game\Triggers\TriggerFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerFlags.h">
+      <Filter>Source Files\Game\Triggers\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionKey.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionType.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\ConditionType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SteppedOnCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\SteppedOnCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FacingCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\FacingCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ActivationExpression.h">
+      <Filter>Source Files\Game\Triggers\ActivationExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CompositeCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\CompositeCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionRegistry.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProximityCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ProximityCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InteractCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\InteractCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionFactory.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Condition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VectorUtils.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FloatUtils.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Distances.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpatialBuckets.h">
+      <Filter>Source Files\Miscellaneous\SpatialBuckets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerRegistry.h">
+      <Filter>Source Files\Game\Triggers\TriggerRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerState.h">
+      <Filter>Source Files\Game\Triggers\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FNV1aHash.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileRenderPart.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable.h">
+      <Filter>Source Files\Graphics\RenderSystems\GameRenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppRenderSystem.h">
+      <Filter>Source Files\Graphics\RenderSystems\AppRenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameRenderSystem.h">
+      <Filter>Source Files\Graphics\RenderSystems\GameRenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileCollisionPart.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderLayer.h">
+      <Filter>Source Files\Graphics\RenderSystems\GameRenderSystem\RenderLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TilePlacementMode.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TilePlacementMode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerSaveData.h">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\TriggerSaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardSaveData.h">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\GuardSaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileSaveData.h">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\TileSaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PresetSaveData.h">
+      <Filter>Source Files\Game\SaveManager\GameSaveData\PresetSaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UITileImage.h">
+      <Filter>Source Files\UI\UITileImage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationState.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileReactionType.h">
+      <Filter>Source Files\Graphics\Tiles\TileReactionType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationSystem.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationClip.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationClip</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationFrame.h">
+      <Filter>Source Files\Graphics\Tiles\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CollisionCell.h">
+      <Filter>Source Files\Game\GameMap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SemiAnimationOverride.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\SemiAnimationOverride</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FullAnimationOverride.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\FullAnimationOverride</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverrideType.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationOverrideView.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides\AnimationOverrideView</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CellAnimationRelevance.h">
+      <Filter>Source Files\Graphics\Tiles\Animations\AnimationOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileAnchorInstance.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TileAnchorInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AnimationFrameCache.h">
+      <Filter>Source Files\Graphics\Tiles\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileInstance.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioSystem.h">
+      <Filter>Source Files\Audio\AudioSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioBackend.h">
+      <Filter>Source Files\Audio\AudioBackend</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioAsset.h">
+      <Filter>Source Files\Audio\AudioAsset</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioTrack.h">
+      <Filter>Source Files\Audio\AudioTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioBus.h">
+      <Filter>Source Files\Audio\AudioBus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioPlaybackOptions.h">
+      <Filter>Source Files\Audio\AudioPlaybackOptions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioClip.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio.h">
+      <Filter>Source Files\Miscellaneous\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Configuration.h">
+      <Filter>Source Files\Miscellaneous\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WindowConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VisionRangeBaseConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VisionRangeModifierConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures\GuardConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIColorConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardSearchConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionConfiguraiton.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpatialBucketConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IOConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstantConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VisionRangeConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardTimingConfiguration.h">
+      <Filter>Source Files\Miscellaneous\Configuration\ConfigurationStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioAction.h">
+      <Filter>Source Files\Miscellaneous\Audio\AudioAction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioTargetType.h">
+      <Filter>Source Files\Miscellaneous\Audio\AudioTargetType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioCommand.h">
+      <Filter>Source Files\Miscellaneous\Audio\AudioCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioCommandOptions.h">
+      <Filter>Source Files\Miscellaneous\Audio\AudioCommand\AudioCommandOptions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileMetadataPart.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileAnimationOverride.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TileAudio.h">
+      <Filter>Source Files\Graphics\Tiles\TileStructs\TileAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemoryTracker.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TimedConditionType.h">
+      <Filter>Source Files\Game\Triggers\Conditions\ConditionKey\TimedConditionType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TimedCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\TimedCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TimedConditionParams.h">
+      <Filter>Source Files\Game\Triggers\Conditions\TimedCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CooldownCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\CooldownCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MaxActivationsCondition.h">
+      <Filter>Source Files\Game\Triggers\Conditions\MaxActivationsCondition</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModManager.h">
+      <Filter>Source Files\Game\ModManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModMetadata.h">
+      <Filter>Source Files\Game\ModManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Logging.h">
+      <Filter>Source Files\Miscellaneous\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIFactory.h">
+      <Filter>Source Files\UI\UIFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MenuUIState.h">
+      <Filter>Source Files\AppStateMachine\AppStates\MenuUIState</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileLoader.h">
+      <Filter>Source Files\Miscellaneous\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JSONParser.h">
+      <Filter>Source Files\Miscellaneous\JSONParser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JSONParseFlags.h">
+      <Filter>Source Files\Miscellaneous\JSONParser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIType.h">
+      <Filter>Source Files\UI\UIFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataProvider.h">
+      <Filter>Source Files\Miscellaneous\DataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIElementProperties.h">
+      <Filter>Source Files\UI\UIBaseElement\UIElement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemValueRegistry.h">
+      <Filter>Source Files\Miscellaneous\SystemValueRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SettingsManager.h">
+      <Filter>Source Files\Miscellaneous\SettingsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UISaveSlot.h">
+      <Filter>Source Files\UI\UISaveSlot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SaveSlotMode.h">
+      <Filter>Source Files\UI\UISaveSlot\SaveSlotMode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WriterState.h">
+      <Filter>Source Files\UI\UICutsceneTextWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WriterStateType.h">
+      <Filter>Source Files\UI\UICutsceneTextWriter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArrayMiscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs\ArrayMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueArrow.h">
+      <Filter>Source Files\UI\UIDialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EnumMiscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs\EnumMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StringMiscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs\StringMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StackAction.h">
+      <Filter>Source Files\AppStateMachine\AppStateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StackActionType.h">
+      <Filter>Source Files\AppStateMachine\AppStateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScoreEntry.h">
+      <Filter>Source Files\Game\ScoreManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GridNode.h">
+      <Filter>Source Files\Game\Pathfinding\GridNodePool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDL_FPointOperators.h">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDL_FRectOperators.h">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SDLMiscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs\SDLMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IOMiscs.h">
+      <Filter>Source Files\Miscellaneous\Miscs\IOMiscs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Unused.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerStrategyType.h">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerStrategy.h">
+      <Filter>Source Files\Characters\Player\PlayerStrategies\PlayerStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButtonCallbackType.h">
+      <Filter>Source Files\UI\UIButton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProviderLifetime.h">
+      <Filter>Source Files\Miscellaneous\DataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProviderEntry.h">
+      <Filter>Source Files\Miscellaneous\DataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemActionRegistry.h">
+      <Filter>Source Files\Game\SystemActionRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemAction.h">
+      <Filter>Source Files\Game\SystemActionRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResolvedChoice.h">
+      <Filter>Source Files\Miscellaneous\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueType.h">
+      <Filter>Source Files\Miscellaneous\Dialogue\DialogueType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogueData.h">
+      <Filter>Source Files\Miscellaneous\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerOrigin.h">
+      <Filter>Source Files\Game\Triggers\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextFieldCallbackType.h">
+      <Filter>Source Files\UI\UITextField</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PanelCallbackType.h">
+      <Filter>Source Files\UI\UIPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SliderLayout.h">
+      <Filter>Source Files\UI\UITextField</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuardStrategy.h">
+      <Filter>Source Files\Characters\Guard\GuardStrategies\GuardStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AUST2D.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\flagIcon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

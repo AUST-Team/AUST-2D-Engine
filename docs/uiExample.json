@@ -1,0 +1,248 @@
+{
+    "mainPanel": "main", // What the main panel is, this is used when loading the UI to put the player on this panel when it first loads.
+    "panels": {
+        "main": { // The key must match the 'mainPanel'
+            "panel": { // Panel itself
+                "element": {
+                    "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 }, // Bounds. See misc sections in the PDF.
+                    "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 }, // Bounds. See misc sections in the PDF.
+                    "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 } // Bounds. See misc sections in the PDF.
+                },
+                "onEnter": [ // Events! See eventsExample.json.
+                    { "pauseAudio": null },
+                    { "playOrResumeAudio": "map1music" }
+                ],
+                "onExit": null
+            },
+            "elements": [
+                ... // Elements (see below). Yes, a panel can contain other panels!
+            ]
+        },
+        "load": {
+            "file": "loadPanel.json" // Want to use the same panel in multiple places? Great, just make another file, below is how the file should look like
+            /*
+            {
+                "panel": {
+                    "element": {
+                        "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+                        "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "onEnter": null,
+                    "onExit": null
+                },
+                "elements": [
+                    ...
+                ]
+            }
+            */
+        }
+    }
+}
+
+// Now what about elements?
+
+{
+    "type": "Label",
+    "id": "<uniqueName>",
+    // See the misc section at the bottom of the PDF to see how to declare most of these (bounds, color, alignment, etc)
+    "element": { 
+        "bounds": { "x": 450, "y": 75, "w": 60, "h": 40 },
+        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+    },
+    "textElement": {
+        "text": "Volume:",
+        "effect": {"typewriter": {"delay": {"ms": 600} } } // This can be ommited if no typewriter effect is wanted.
+    },
+    "textStyle": {
+        "fontFamily": "label", // Must match the names in fonts.json
+        "fontSize": 24.0,
+        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+    }
+}
+
+{
+    "type": "Button",
+    "id": "score_button",
+    "element": {
+        "bounds": { "x": 300, "y": 430, "w": 200, "h": 50 },
+        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+    },
+    "textElement": {
+        "text": "Score",
+        "effect": {"typewriter": {"delay": {"ms": 600} } }
+    },
+    "textStyle": {
+        "fontFamily": "button",
+        "fontSize": 24.0,
+        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+    },
+    // All that a button has is callbacks! See eventsExample.json                    
+    "onClick": [
+        { "playAudio": "button_click" },
+        { "changePanel": "score" }
+    ],
+    "onMouseEnter": {
+        "changeStyle": {
+            "backgroundColor": [255, 0, 61, 255]
+        }
+    },
+    "onMouseExit": {
+        "changeStyle": {
+            "backgroundColor": [0, 0, 0, 0]
+        }
+    }
+}
+
+{
+    "type": "Table",
+    "id": "controls_table",
+    "element": {...},
+    "header": { // Header of the table.
+        "fontFamily": "table",
+        "fontSize": 20.0,
+        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "backgroundColor": { "r": 60, "g": 63, "b": 72 , "a": 255 },
+        "textAlignment": null // No text alignemnt, that is per whole column.
+    },
+    "cell": { // Cells of the table.
+        "fontFamily": "table",
+        "fontSize": 20.0,
+        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+        "backgroundColor": { "r": 0, "g": 0, "b": 0 , "a": 0 },
+        "textAlignment": null // No text alignemnt, that is per whole column.
+    },
+    "columns": [
+        // Header title, % of the width (so 50/50 split), alignment
+        { "title": "Action", "width": 0.5, "textAlignment": {"horizontal": "left", "vertical": "middle" } },
+        { "title": "Key", "width": 0.5, "textAlignment": {"horizontal": "left", "vertical": "middle" } }
+    ],
+    // Data source, this is inline, it must a matrix of strings.
+    // Ohter data sources include:
+    /*
+        "dataSource": {
+            "type": "provider",
+            "key": "__topScores" // Returns the 15 top scores!
+        },
+    */
+    "dataSource": {
+        "type": "inline",
+        "data": [
+            [ "Movement", "W / A / S / D / Arrow keys" ],
+            [ "Interact", "E / Z" ],
+            [ "Pause", "Esc" ],
+            [ "Dialogue Scrolling", "Movement Keys / Mouse Wheel" ],
+            [ "Dialogue Choice Selection", "Movement Keys" ],
+            [ "Dialogue Choice Confirmation", "Interact Keys" ]
+        ]
+    }
+}
+
+{
+    "type": "TextField",
+    "id": "...",
+    "element": { ... },
+    "textElement": { "text": "100" },
+    "textStyle": { ... },
+    "placeholderText": null, // Placeholder text, if any.
+    "maxLength": 3, // Max length of the text.
+    "dataBindKey": null, // Data bind key, if set, once text is typed, it will send the text to a data provider with the given key.
+    "numericOnly": true, // Should the text field only accept only numeric characters?
+    "showSlider": true, // Should the text field show a slider. Only possible if numericOnly = true
+    "blinkTime": { "ms": 500.0 }, // Blink time of the cursor
+    "textPadding": 5.0, // Text padding from the text box
+    "onTextInputStart": null, // Events 
+    "onTextInputStop": [
+        { "setMasterVolume": null } // Sets the master volume, and we make a promise that we will insert something here.
+    ],
+    "binding": { // Binding for GETTING a value when the text field loads. This one is from the system and it gets the masterVolume
+        "type": "system",
+        "key": "__masterVolume"
+    },
+    "cursorColor": { "r": 255, "g": 255, "b": 255, "a": 255 }, // Blinking cursor color.
+    "slider": { // Slider settings. Only used when numericOnly = showSlider = true. Slider is to the RIGHT of the text box.
+        "sliderTrackColor": { "r": 80, "g": 80, "b": 80, "a": 255 }, // The background of the track
+        "sliderActiveColor": { "r": 0, "g": 180, "b": 255, "a": 255 }, // The active color
+        "handleColor": { "r": 240, "g": 240, "b": 240, "a": 255 }, // Color of the handle
+        "sliderPadding": 10.0, // Padding of the slider from the text box.
+        "sliderSize": { "w": 120, "h": 4 }, // Size of the slider.
+        "handleSize": { "w": 10, "h": 16 } // Size of the handle
+    }
+}
+
+{
+    "type": "SaveSlot",
+    "id": "...",
+    "element": { ... },
+    "textStyle": { ... },
+    "mode": "load", // or "save" to save.
+    "saveId": 1, // ID of the save.
+    "buttons": { // Button callbacks.
+        "onMouseEnter": {
+            "changeStyle": { "backgroundColor": [255, 0, 61, 255] }
+        },
+        "onMouseExit": {
+            "changeStyle": { "backgroundColor": [0, 0, 0, 0] }
+        },
+        "onClick": [
+            { "playAudio": "button_click" },
+            { "stopAudio": null }   
+        ]
+    }
+}
+
+{
+    "type": "LabelCheckbox",
+    "id": "...",
+    "element": { ... },
+    "textElement": { ... },
+    "textStyle": { ... },
+    "boxColor": [200, 200, 200, 255],   // Color of the box
+    "checkColor": [ 50, 200, 50, 255 ], // Color of the check mark
+    "boxSize": 20.0, // Box Size
+    "spacing": 10.0, // Spacing of the box from the text
+    "initial": false, // Initial value
+    "binding": { // Binding 
+        "type": "system",
+        "key": "__isFullscreen" // Gets the value of the fullscreen flag
+    },
+    "onToggle": [
+        { "toggleFullscreen": null }, // Sets the fullscreen on (true) or off (false). Null can be used (it automatically checks if the game is fullscreen or not), but we can also insert values!
+        { "playAudio": "checkbox_toggle" }
+    ]
+}
+
+{
+    "type": "LabelMasked",
+    "id": "...",
+    "element": {...},
+    "textElement": {...},
+    "textStyle": {...},
+    "maskImage": "resources\\images\\flag.png" // Path to the image! Will be converted to the proper format regardless of the separators.
+}
+
+{
+    "type": "CutsceneWriter",
+    "id": "...",
+    "element": {...},
+    "textStyle": { ... },
+    "pauseTime": {"ms": 2000.0}, /// Pause at the end of writing a sentence
+    "fadeSpeed": 0.001, // Fade speed in %
+    "typewriterSpeed": { "ms": 40.0 }, // Typewriter speed per character (delay inbetween characters). 
+    "skipLabel": "skip_label", // The skip label, optional. The skip label needs to be declared *BEFORE* the cutscene writer.
+    "lines": [
+        "You have been arrested by the royal guards.",
+        "You were jailed, and soon after, stood trial, a very short and ceremonial trial",
+        "An audit was done and you were found guilty of treason.",
+        "Your sentence was forced labor, for which you were sent to work on the canal.",
+        "Your fate remains unknown.",
+        "Glory to Faloria."
+    ],
+    "onComplete": {
+        "quitToMainMenu": null
+    }
+}

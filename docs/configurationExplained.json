@@ -1,0 +1,127 @@
+{
+    "window": {
+        "width": 800,     // In pixels.
+        "height": 600,
+        "name": "AUST", // Name of the window.
+        "iconFileName": "flagIcon.png" // Found in the aust/resources/images/ folder
+    },
+    "app": {
+        "targetFPS": 60
+    },
+
+    "tiles": {
+        "width": 48, // In pixels.
+        "height": 48,
+        "maxScale": 4.0,    // Max scale of the tiles (multiplier).
+        "minScale": 0.5,    // Min scale of the tiles.
+        "step": 0.25        // When calculating scales, what step to take. 
+    },
+    "character": {
+        "width": 48,    // In pixels.
+        "height": 48,
+        "speed": 3.0    // In tiles / second.
+    },
+    "player": {
+        "maxTimesCaught": 3 // The max number of times the player can be caught.
+    },
+    "guard": {
+        "speed": {
+            "patrol": 2.0,
+            "chase": 2.4
+        },
+        "vision": {
+            "base": {
+                "centralAngle": 30.0, // Degrees. The view cone of the guards.
+                "coneAngle": 90.0,
+                "peripheralAngle": 140.0,
+                "centralRange": 4, // In tiles. How far a guard can see in each cone.
+                "coneRange": 3,
+                "peripheralRange": 2
+            },
+            "patrol": {
+                "additionalAngle": 0.0, // Additional view cone angle in a certain state.
+                "additionalTiles": 0    // Additional tiles the guard can see in a certain state.
+            },
+            "chase": {
+                "additionalAngle": 15.0,
+                "additionalTiles": 2
+            },
+            "search": {
+                "additionalAngle": 30.0,
+                "additionalTiles": 3
+            }
+        },
+        "timings": {
+            "alertDuration": { "ms": 1500.0 },          // The duration of the alert above a guard's head.
+            "aggressionReduction": { "ms": 5000.0 },    // The duration it takes for agression to come back to 0.
+            "visionReduction": { "ms": 10000.0 },       // The duration it takes for a guard's vision to come back to normal.
+            "patrolPause": { "ms": 1500.0 }             // The pause at each point in a patrol.
+        }
+    },
+    "guardSearch": {
+        "followTiles": 3, /// The number of tiles to follow the player. This is base, more can be added based on agression.
+        "randomSearchTime": { "ms": 180.0 }, // Time spent searching for the player. This is base, more can be added based on aggression.
+        "aggressionRandomTimeMultiplier": 180.0 // Additional time to be added (180 if agression = 1) to the random search
+    },
+    "ui": {
+        "colors": {
+            // Color of the in-game background if there aren't enough tiles to fill the map.
+            "background": [
+                50, // R
+                54, // G
+                62, // B
+                255 // A
+            ],
+            // Color of the UI buttons if they are disabled.
+            "disabled": [
+                150,
+                150,
+                150,
+                255
+            ]
+        }
+    },
+    "conditions": {
+        "interactRadius": 1,    // Tiles. The distance the player needs to be to interact with an interact condition.
+        "facingRadius": 6       // The distance the player needs to be at to trigger a 'facing' condition
+    },
+    "spatialBuckets": {
+        "tileOnlyRadius": 0,    // Tiles. Tile only spatial bucket. These are used to efficiently trigger triggers.
+        "nearRadius": 2,        
+        "mediumRadius": 5,      
+        "farRadius": 6          // Although this is the 'far radius', it is actually anything equal or more than the far radius.
+    },
+    "paths": {
+        "startingMap": "DebugMap",          // Starting map, used for 'startGame'. No '.json' extension needed.
+        "mapDirectory": "resources\\maps",  // Folder containing the map files. Used when changing maps.
+
+        "uiFilePath": "resources\\ui.json", // Folder containing the names of the main menu, pause menu and dialogue files.
+        "uiDirectory": "resources\\ui",     // Folder containing the UI declarations.
+
+        "saveDirectory": "saves",   // Saves folder.
+
+        "scoreFilePath": "scores\\scores.json", // Path to the scores folder.
+
+        "fontFilePath": "resources\\fonts.json",    // Font declarations.
+        "fontDirectory": "resources\\fonts",        // Font files (.ttf, .otf) themselves.
+
+        "spriteSheetFilePath": "resources\\textures\\sprite_sheet.png", // Path to the sprite sheet.
+        "tileFilePath": "resources\\tiles.json",    // Tile declarations.
+
+        "presetDirectory": "resources\\presets",    // Folder that contains the presets.
+        "flagFilePath": "resources\\flags.json",    // Contains the flag declarations.
+
+        "imagesDirectory": "resources\\images",     // Folder of the images, used when searching for the icon image.
+
+        "audioFilePath": "resources\\audio.json",   // Audio declarations.
+        "audioDirectory": "resources\\audio",       // Audio files themselves (.ogg, .wav, .mp3, .flac)
+
+        "settingsFilePath": "resources\\settings.json", // App settings.
+
+        "cutsceneDirectory": "resources\\cutscenes",    // Folder containing the cutscenes. If a cutscene refers to another panel (such as when it ends, it switches to another panel), that must be in the UI folder.
+
+        "dialogueDirectory": "resources\\dialogue", // Dialogue directory, contains the nodes and banks.
+
+        "systemValuesFilePath": "resources\\systemValues.json"  // Saved system values.
+    }
+}

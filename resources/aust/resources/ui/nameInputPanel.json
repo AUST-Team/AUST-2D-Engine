@@ -1,0 +1,93 @@
+{
+    "panel": {
+        "element": {
+            "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+            "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+            "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+        },
+        "onEnter": null,
+        "onExit": null
+    },
+    "elements": [
+        {
+            "type": "Label",
+            "id": "input_label",
+            "element": {
+                "bounds": { "x": 240, "y": 225, "w": 320, "h": 40 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Input Name:"
+            },
+            "textStyle": {
+                "fontFamily": "label",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            }
+        },
+        {
+            "type": "TextField",
+            "id": "input_field",
+            "element": {
+                "bounds": { "x": 240, "y": 275, "w": 320, "h": 40 },
+                "backgroundColor": { "r": 30, "g": 30, "b": 30, "a": 255 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "textElement": null,
+            "textStyle": {
+                "fontFamily": "label",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "placeholderText": "(Leave blank to skip)",
+            "maxLength": 32,
+            "dataBindKey": "score_name",
+            "numericOnly": false,
+            "showSlider": false,
+            "blinkTime": { "ms": 500.0 },
+            "onTextInputStart": null,
+            "onTextInputStop": null,
+            "dataSource": null,
+            "binding": null,
+            "cursorColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+            "textPadding": 5.0,
+            "slider": null
+        },
+        {
+            "type": "Button",
+            "id": "submit_score_button",
+            "element": {
+                "bounds": { "x": 320, "y": 335, "w": 160, "h": 40 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Submit"
+            },
+            "textStyle": {
+                "fontFamily": "button",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "onClick": [
+                { "playAudio": "button_click" },
+                { "submitScore": "score_name" },
+                { "quitToMainMenu": null }
+            ],
+            "onMouseEnter": {
+                "changeStyle": {
+                    "backgroundColor": [255, 0, 61, 255]
+                }
+            },
+            "onMouseExit": {
+                "changeStyle": {
+                    "backgroundColor": [0, 0, 0, 0]
+                }
+            }
+        }
+    ]
+}

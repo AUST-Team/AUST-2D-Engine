@@ -1,0 +1,292 @@
+{
+    "mainPanel": "main",
+    "panels": {
+        "main": {
+            "panel": {
+                "element": {
+                    "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+                    "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+                    "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                },
+                "onEnter": [
+                    { "pauseAudio": null },
+                    { "playOrResumeAudio": "map1music" }
+                ],
+                "onExit": null
+            },
+            "elements": [
+                {
+                    "type": "LabelMasked",
+                    "id": "title_label",
+                    "element": {
+                        "bounds": { "x": 0, "y": 50, "w": 800, "h": 150 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "AUST",
+                        "effect": {"typewriter": {"delay": {"ms": 500} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "title",
+                        "fontSize": 150.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "maskImage": "resources\\images\\flag_comp.png"
+                },
+                {
+                    "type": "Button",
+                    "id": "start_button",
+                    "element": {
+                        "bounds": { "x": 300, "y": 250, "w": 200, "h": 50 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Start",
+                        "effect": {"typewriter": {"delay": {"ms": 600} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "stopAudio": null },
+                        { "playCutscene": "prologue" }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                },
+                {
+                    "type": "Button",
+                    "id": "load_button",
+                    "element": {
+                        "bounds": { "x": 300, "y": 310, "w": 200, "h": 50 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Load",
+                        "effect": {"typewriter": {"delay": {"ms": 600} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "changePanel": "load" }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                },
+                {
+                    "type": "Button",
+                    "id": "options_button",
+                    "element": {
+                        "bounds": { "x": 300, "y": 370, "w": 200, "h": 50 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Options",
+                        "effect": {"typewriter": {"delay": {"ms": 600} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "changePanel": "options" }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                },
+                {
+                    "type": "Button",
+                    "id": "score_button",
+                    "element": {
+                        "bounds": { "x": 300, "y": 430, "w": 200, "h": 50 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Score",
+                        "effect": {"typewriter": {"delay": {"ms": 600} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },                    
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "changePanel": "score" }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                },
+                {
+                    "type": "Button",
+                    "id": "quit_button",
+                    "element": {
+                        "bounds": { "x": 300, "y": 490, "w": 200, "h": 50 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Quit",
+                        "effect": {"typewriter": {"delay": {"ms": 600} } }
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "exitGame": null }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                }
+            ]
+        },
+        "load": {
+            "file": "loadPanel.json"
+        },
+        "options": {
+            "file": "optionsPanel.json"
+        },
+        "score": {
+            "panel": {
+                "element": {
+                    "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+                    "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+                    "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                },
+                "onEnter": null,
+                "onExit": null
+            },
+            "elements": [
+                {
+                    "type": "Table",
+                    "id": "score_table",
+                    "element": {
+                        "bounds": { "x": 150, "y": 100, "w": 500, "h": 340 },
+                        "backgroundColor": { "r": 50, "g": 53, "b": 62, "a": 255 },
+                        "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+                    },
+                    "header": {
+                        "fontFamily": "table",
+                        "fontSize": 20.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "backgroundColor": { "r": 60, "g": 63, "b": 72 , "a": 255 },
+                        "textAlignment": null
+                    },
+                    "cell": {
+                        "fontFamily": "table",
+                        "fontSize": 18.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0 , "a": 0 },
+                        "textAlignment": null
+                    },
+                    "columns": [
+                        { "title": "Name", "width": 0.3, "textAlignment": {"horizontal": "left", "vertical": "middle" } },
+                        { "title": "Times Caught", "width": 0.4, "textAlignment": {"horizontal": "center", "vertical": "middle" } },
+                        { "title": "Time Played", "width": 0.3, "textAlignment": {"horizontal": "center", "vertical": "middle" } }
+                    ],
+                    "dataSource": {
+                        "type": "provider",
+                        "key": "__topScores"
+                    },
+                    "rowHeight": 30.0,
+                    "padding": 5.0
+                },
+                {
+                    "type": "Button",
+                    "id": "back_button",
+                    "element": {
+                        "bounds": { "x": 340, "y": 470, "w": 120, "h": 40 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Back"
+                    },
+                    "textStyle": {
+                        "fontFamily": "button",
+                        "fontSize": 24.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "onClick": [
+                        { "playAudio": "button_click" },
+                        { "changePanel": "main" }
+                    ],
+                    "onMouseEnter": {
+                        "changeStyle": {
+                            "backgroundColor": [255, 0, 61, 255]
+                        }
+                    },
+                    "onMouseExit": {
+                        "changeStyle": {
+                            "backgroundColor": [0, 0, 0, 0]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

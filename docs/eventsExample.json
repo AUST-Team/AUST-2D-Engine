@@ -1,0 +1,139 @@
+{
+    "quitToMainMenu": null,
+    "exitGame": null,   // Exits the whole app.
+    "resumeGame": null, // Resumes the game. Hopefully the state is either in-game or in the pause menu.
+    "toggleFullscreen": true / false, // This is usually injected from a checkbox
+    "playCutscene": "cutsceneName", // NO '.json'!
+    "submitScore": "playerNameInputKey",    // The data provider key to get the name from (see TextInput)
+    "setMasterVolume": <number between 0 - 100 > OR null, // null is used for injecting a number from a text field!
+    "changePanel": "panelName", // This is treated at UI level, it changes the panel to the one with the given name.
+    "changeStyle": {
+        "backgroundColor": "#FFFFFF" // Changes the background color to white.
+    },
+
+    "audioControl": {
+        "target": {
+            "type": "clip",
+            "id": "map1Music"
+        },
+        "action": "play",
+        "playback": {
+            "loop": true,
+            "loopCount": 3,
+            "fadeIn": 1, // Seconds!
+            "volume": 0.5
+        }
+    },
+
+    "audioControl": {
+        "target": {
+            "type": "tag",
+            "id": "SFX"
+        },
+        "action": "stop",
+        "fadeOut": {"ms": 500} // Miliseconds!
+    },
+
+    "audioControl":{
+        "target": {
+            "type": "all"
+        },
+        "action": "pause"
+    },
+
+    "audioControl":{
+        "target": {
+            "type": "clip",
+            "id": "mainMenuMusic"
+        },
+        "action": "playOrPause"
+    },
+
+    "playAudio": "button_click",    // A less sophisticated audioControl
+
+    "playAudio": { 
+        "name": "button_click", 
+        "options": {
+            "volume": 0.8, 
+            "loop": true,
+            "loopCount": 3 
+        } 
+    },
+
+    "pauseAudio": "clipName" OR null, // Null for all audio
+
+    "resumeAudio": "clipName",
+
+    "stopAudio": "clipName" OR null, // Null for all audio.
+
+    "stopAudio": {
+        "name": "clipName" OR null,
+        "fadeOut": <number> OR object {"ms": <number>}
+    },
+
+    "playOrResumeAudio": "button_click", // Plays the audio or resumes if it was was paused.
+
+    "playOrResumeAudio": { 
+        "name": "button_click", 
+        "options": { // If the audio is played for the first time, it will use these options.
+            "volume": 0.8, 
+            "loop": true,
+            "loopCount": 3 
+        } 
+    },
+
+    "game:setTile": { // Yes, the game: prefix is needed
+        "positions": [{"x": 10, "y": 10}],
+        "tile": "TownSoil",
+        "placement": "Replace"
+    },
+
+    "game:setFlag": {
+        "flag": "flagName", // Note: the flag needs to be declared beforehand.
+        "value": true / false
+    },
+
+    "game:setPreset": {
+        "position": {"x": 10, "y": 10}, // Upper left corner coordinates!
+        "preset": "presetName",
+        "placement": "Add" or null // If null, will use tile's defaults.
+    },
+
+    "game:startDialogue": ..., // See dialogueNodes.json in the same folder for all the ways to declare a dialogue.
+
+    "game:checkPlayerCaught": {
+        "below": [  // Actions to do if the player is below the threshold (see maxTimesPlayerCaught in configuration.json). The times caught start at 0.
+            { "startDialogue": "okNode" },
+            { "playAudio": ... }
+        ],
+        "above": [ // Same thing, but what to do when player is equal or above the max allowed times.
+            { "playCutscene": "badEnding" }
+        ]
+    },
+
+    "game:setTrigger": { // Sets a trigger!
+        "name": "trigger_2",
+        "position": {"x": 10, "y": 10}, // Position.
+        
+        "flags": { // Flags (see mapExplained.json)
+            "repeatable": true,
+            "autoDelete": false
+        },
+
+        "conditions": { // Flags (see mapExplained.json)
+            "type": "interact"
+        },
+
+        "events": { // Hey, this is this file!
+            "game:startDialogue": {
+                "type": "narration",
+                "lines": "I am a brand new trigger",
+                "onEnd": null
+            }
+        }
+    },
+
+    "game:changeMap": "mapName", // Changes the map to the given one.
+
+    "game:setCaughtGuardOnCooldown": <number> // Sets the guard that has caught the player in cooldown mode for X time
+}

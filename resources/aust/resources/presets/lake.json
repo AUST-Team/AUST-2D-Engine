@@ -1,0 +1,6 @@
+[
+  ["skip", "Soil", "Forest", null],
+  ["Forest", "Water", "Water", "Soil"],
+  ["Soil", "Water", "Water", "Forest"],
+  ["X", "Soil", "Soil", "X"]
+]

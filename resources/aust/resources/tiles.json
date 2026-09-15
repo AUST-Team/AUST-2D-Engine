@@ -1,0 +1,469 @@
+[
+  {
+    "name": "Grass",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 0 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Soil",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 1, "y": 0 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Water",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 2, "y": 0 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Mountain",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 3, "y": 0 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "TownGrass",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 1 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "TownGrassDestroyed",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 1, "y": 1 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": true } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "TownSoil",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 2, "y": 1 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Forest",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 3, "y": 1 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "PlayerLeft",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 2 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Actor",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [{ "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false}],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "PlayerRight",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 1, "y": 2 },
+        "offset": { "x": 0, "y": 0 },
+        "defaultAnimation": null,
+        "animations": ["walk"],
+        "layer": "Actor", 
+        "zBias": 0
+      }
+    ],
+    "collision": [{ "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false}],
+    "audio": null,
+    "animations": {
+      "walk": {
+        "loop": true,
+        "randomOffset": false,
+        "frames": [
+          { "src": { "x": 4, "y": 0 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 1 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 2 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 3 }, "duration": 1.0 }
+        ]
+      }
+    },
+    "metadata": null
+  },
+  {
+    "name": "GuardUp",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+
+    "renderParts": [
+      {
+        "src": { "x": 2, "y": 2 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Actor",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "GuardDown",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 3, "y": 2 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Actor",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "GuardLeft",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 3 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Actor",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "GuardRight",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 1, "y": 3 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Actor",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 0 }, "solid": true, "blocksVision": false } ],
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "ChaseIcon",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 2, "y": 3 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Overlay",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 100
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "SearchIcon",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 2, "y": 4 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Overlay",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 100
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "ArrowDown",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 4 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Overlay",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 100
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "ArrowUp",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 0, "y": 5 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Overlay",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 100
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Rock",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Add",
+    "renderParts": [
+      {
+        "src": { "x": 1, "y": 4 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Decoration",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 100
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": null,
+    "metadata": null
+  },
+  {
+    "name": "Tree",
+    "footprint": { "w": 1, "h": 2 },
+    "placement": "Add",
+    "renderParts": [
+      {
+        "src": { "x": 3, "y": 4 },
+        "offset": { "x": 0, "y": 0 },
+        "layer": "Ground",
+        "defaultAnimation": null,
+        "animations": ["steppedOn"],
+        "zBias": 0
+      },
+      {
+        "src": { "x": 3, "y": 3 },
+        "offset": { "x": 0, "y": 1 },
+        "layer": "Foreground",
+        "defaultAnimation": null,
+        "animations": null,
+        "zBias": 0
+      }
+    ],
+    "collision": [ { "offset": { "x": 0, "y": 1 }, "solid": true, "blocksVision": false } ],
+    "audio": {
+      "steppedOn": {
+        "clip": "checkbox_toggle",
+        "playback": {
+          "volume": 0.7,
+          "fadeIn": 0,
+          "loop": false,
+          "loopCount": null
+        }
+      }
+    },
+    "animations": {
+      "steppedOn": {
+        "loop": false,
+        "randomOffset": false,
+        "frames": [
+          { "src": { "x": 4, "y": 0 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 1 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 2 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 3 }, "duration": 1.0 }
+        ]
+      }
+    },
+    "metadata": [
+        {
+          "defaultAudio": null,
+          "audio": ["steppedOn"],
+          "position": { "x": 0, "y": 0 }
+        }
+    ]
+  },
+  {
+    "name": "EvilTile",
+    "footprint": { "w": 1, "h": 1 },
+    "placement": "Replace",
+    "renderParts": [
+      {
+        "src": { "x": 4, "y": 0 },
+        "offset": { "x": 0, "y": 0 },
+        "defaultAnimation": "idle",
+        "animations": ["steppedOn"],
+        "layer": "Ground",
+        "zBias": 0
+      }
+    ],
+    "collision": null,
+    "audio": null,
+    "animations": {
+      "idle": {
+        "loop": true,
+        "randomOffset": true,
+        "frames": [
+          { "src": { "x": 4, "y": 0 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 1 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 2 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 3 }, "duration": 1.0 }
+        ]
+      },
+      "steppedOn": {
+        "loop": true,
+        "randomOffset": false,
+        "frames": [
+          { "src": { "x": 1, "y": 5 }, "duration": 1.0 },
+          { "src": { "x": 2, "y": 5 }, "duration": 1.0 },
+          { "src": { "x": 3, "y": 5 }, "duration": 1.0 },
+          { "src": { "x": 4, "y": 5 }, "duration": 1.0 }
+        ]
+      }
+    },
+    "metadata": null
+  }
+]

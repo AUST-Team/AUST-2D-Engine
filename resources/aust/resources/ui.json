@@ -1,0 +1,5 @@
+{
+    "mainMenu": "mainMenu.json",
+    "pauseMenu": "pauseMenu.json",
+    "dialogue": "dialogue.json"
+}

@@ -1,0 +1,85 @@
+[
+    // Tiles in AUST aren't really 'tiles', or well they are, but they can be multiple tiles in a single tile!
+    // Due to engine limitations (and laziness until I get around to make it), here are the tiles whose names MUST be used for the engine to properly put them in their required places: 
+    // PlayerUp, PlayerDown, PlayerRight, PlayerLeft, GuardLeft, GuardRight, GuardUp, GuardDown, ChaseIcon, SearchIcon
+    {
+        // This is the most basic tile you can declare.
+        "name": "Grass",
+        "footprint": { "w": 1, "h": 1 }, // Footprint of the whole 'tile'.
+        "placement": "Replace", // Placement mode; Can be 'replace' (where it removed any other tile on the position), 'add' (where it adds ontop of existing tiles, if any)
+        "renderParts": [ // The render parts are the parts of the whole 'tile'
+        {
+            "src": { "x": 0, "y": 0 },  // Source of the part. Coordinates from the top left; ascending down and to the left.
+            "offset": { "x": 0, "y": 0 }, // Offset of the tile within the 'set'. Although the source is from the top left, this is from the bottom left.
+            "layer": "Ground",  // Layer, in order of priorities, from lowest to highest (highest gets drawn closest to the screen): ground, decoration, actor, foreground, overlay
+            "defaultAnimation": null,   // Default animation, should be a string. Animation should also be declared in the "animations".
+            "animations": null, // Vector of allowed animations. The default animation, if any, is automatically added to the allowed animations vector.
+            "zBias": 0  // User-defined layer tuning. Tiles on the same layer use this to see which one should be rendered on top.
+        }
+        ],
+        "collision": null,  // Collision parts. Array.
+        "audio": null,  // Audio. Object.
+        "animations": null, // Animations. Object.
+        "metadata": null    // Metadata. Array.
+    },
+    {
+        "name": "Tree",
+        "footprint": { "w": 1, "h": 2 },    // One tile long, two tiles tall
+        "placement": "Add", // Don't remove any tiles, add ontop.
+        "renderParts": [
+        {
+            "src": { "x": 3, "y": 4 }, 
+            "offset": { "x": 0, "y": 0 }, // This is the stem of the tree, so offset 0, 0
+            "layer": "Ground",
+            "defaultAnimation": null,
+            "animations": ["steppedOn"], // An allowed animation! Will be triggered once the player steps on it.
+            "zBias": 0
+        },
+        {
+            "src": { "x": 3, "y": 3 },
+            "offset": { "x": 0, "y": 1 }, // This is the crown of the tree, so offset 0, 1, so one tile above. Don't worry programmers, the engine converts it to negative
+            "layer": "Foreground",
+            "defaultAnimation": null,
+            "animations": null,
+            "zBias": 0
+        }
+        ],
+        "collision": [ 
+            { 
+                "offset": { "x": 0, "y": 1 }, // Offset
+                "solid": true, // Flag if the tile can be walked on. 'True' for solid unwalk-able tiles, 'false' if tile does not stop movement.
+                "blocksVision": false   // A more interesting flag. If this is set to 'true', enemies cannot see through it, otherwise, they will be able to see through it.
+            } // In this instance, the crown of the tree blocks movement, but not vision, so for enemies the vision check will pass, however, they will have to path around the tree.
+        ],
+        "audio": {
+            "steppedOn": { // Here we see an audio, the key being the same as <"animations": ["steppedOn"],>
+                "clip": "checkbox_toggle", // Clip to play.
+                "playback": { // Playback settings, overrides the default ones from audio.json. Optional.
+                    "volume": 0.7,
+                    "fadeIn": 0,
+                    "loop": false,
+                    "loopCount": null
+                }
+            }
+        },
+        "animations": { // Now an animation.
+            "steppedOn": {  // Notice the key, this animation will play when a part of the 'tile' (the whole tree) is stepped on.
+                "loop": false, // Loop or not. Usually for animations, this does nothing, as they're made in such a way they correspond to a singular action (step on, look at, death), but hopefully one day I will make a 'stand on' animation.
+                "randomOffset": false, // Should the animation have a random offset? If set to false, all tiles sharing this animation will be on the same frame everytime.
+                "frames": [
+                    { "src": { "x": 4, "y": 0 }, "duration": 1.0 }, // Frames of animation, the source, which can differ from the base source, and the duration (see how to declare time), here, 1 second.
+                    { "src": { "x": 4, "y": 1 }, "duration": 1.0 },
+                    { "src": { "x": 4, "y": 2 }, "duration": 1.0 },
+                    { "src": { "x": 4, "y": 3 }, "duration": 1.0 }
+                ]
+            }
+        },
+        "metadata": [ // Now the metadata parts.
+            {
+                "defaultAudio": null,   // Default audio to play, must be declared in "audio"
+                "audio": ["steppedOn"], // Vector of allowed audios. The default audio, if any, is automatically added to this.
+                "position": { "x": 0, "y": 0 } // Where the sound will play from. Currently has little to no effect since there's no real spatial sound.
+            }
+        ]
+    }
+]

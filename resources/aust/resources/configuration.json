@@ -1,0 +1,124 @@
+{
+    "window": {
+        "width": 800,
+        "height": 600,
+        "name": "AUST",
+        "iconFileName": "flagIcon.ico"
+    },
+    "app": {
+        "targetFPS": 60
+    },
+    "tiles": {
+        "width": 48,
+        "height": 48,
+        "maxScale": 4.0,
+        "minScale": 0.5,
+        "step": 0.25
+    },
+    "character": {
+        "width": 48,
+        "height": 48,
+        "speed": 3.0
+    },
+    "player": {
+        "maxTimesCaught": 3
+    },
+    "guard": {
+        "speed": {
+            "patrol": 2.0,
+            "chase": 2.4
+        },
+        "vision": {
+            "base": {
+                "centralAngle": 30.0,
+                "coneAngle": 90.0,
+                "peripheralAngle": 140.0,
+                "centralRange": 4,
+                "coneRange": 3,
+                "peripheralRange": 2
+            },
+            "patrol": {
+                "additionalAngle": 0.0,
+                "additionalTiles": 0
+            },
+            "chase": {
+                "additionalAngle": 15.0,
+                "additionalTiles": 2
+            },
+            "search": {
+                "additionalAngle": 30.0,
+                "additionalTiles": 3
+            }
+        },
+        "timings": {
+            "alertDuration": { "ms": 1500.0 },
+            "aggressionReduction": { "ms": 5000.0 },
+            "visionReduction": { "ms": 10000.0 },
+            "patrolPause": { "ms": 1500.0 }
+        }
+    },
+    "guardSearch": {
+        "followTiles": 3,
+        "randomSearchTime": 180,
+        "aggressionRandomTimeMultiplier": 180.0
+    },
+    "ui": {
+        "colors": {
+            "background": [
+                50,
+                54,
+                62,
+                255
+            ],
+            "disabled": [
+                150,
+                150,
+                150,
+                255
+            ]
+        }
+    },
+    "conditions": {
+        "interactRadius": 1,
+        "facingRadius": 6
+    },
+    "spatialBuckets": {
+        "tileOnlyRadius": 0,
+        "nearRadius": 2,
+        "mediumRadius": 5,
+        "farRadius": 6
+    },
+    "paths": {
+        "startingMap": "DebugMap",
+        "mapDirectory": "resources\\maps",
+
+        "uiFilePath": "resources\\ui.json",
+        "uiDirectory": "resources\\ui",
+
+        "saveDirectory": "saves",
+
+        "scoreFilePath": "scores\\scores.json",
+
+        "fontFilePath": "resources\\fonts.json",
+        "fontDirectory": "resources\\fonts",
+
+        "spriteSheetFilePath": "resources\\textures\\sprite_sheet.png",
+        "tileFilePath": "resources\\tiles.json",
+
+        "presetDirectory": "resources\\presets",
+        "flagFilePath": "resources\\flags.json",
+
+        "imagesDirectory": "resources\\images",
+
+        "audioFilePath": "resources\\audio.json",
+        "audioDirectory": "resources\\audio",
+
+        "settingsFilePath": "resources\\settings.json",
+
+        "cutsceneDirectory": "resources\\cutscenes",
+
+        "dialogueDirectory": "resources\\dialogue",
+
+        "systemValuesFilePath": "resources\\systemValues.json"
+    }
+}

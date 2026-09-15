@@ -1,0 +1,257 @@
+{
+  "name": "DebugMap",
+  "dimensions": [50, 50],
+  "music": "map1music",
+
+  "player": { 
+    "playerStart": { "x": 0, "y": 1 },
+    "playerFacing": "right"
+  },
+
+  "baseTile": "Grass",
+
+  "defaultDialogue": "playerCaughtNode",
+
+  "tiles": [
+    {
+      "name": "Mountain",
+      "placement": "Default",
+      "positions": [
+        { "x": 11, "y": 11 },
+        { "x": { "range": [15, 20] }, "y": 16 },
+        { "x": { "range": [5, 10] }, "y": 7 }
+      ]
+    },
+    {
+      "name": "EvilTile",
+      "placement": "Default",
+      "positions": [
+        { "x": {"range": [5, 6]}, "y": {"range": [5, 6]} }
+      ]
+    },
+    {
+      "name": "Rock",
+      "placement": "Replace",
+      "positions": [
+        { "x": 10, "y": 2 }
+      ]
+    },
+    {
+      "name": "Water",
+      "placement": "Default",
+      "positions": [
+          { "x": 1, "y": 1 },
+          { "x": 8, "y": 8 }
+      ]
+    },
+    {
+      "name": "Tree",
+      "placement": "Default",
+      "positions":[
+          { "x": 3, "y": 10 },
+          { "x": 3, "y": 5 }
+      ]
+    },
+    {
+      "name": "Forest",
+      "placement": "Default",
+      "positions": [ { "x": 12, "y": 11 } ]
+    },
+    {
+      "name": "Soil",
+      "placement": "Default",
+      "positions": [ { "x": { "range": [25, 30] }, "y": { "range": [25, 30] } } ]
+    },
+    {
+      "name": "TownGrassDestroyed",
+      "placement": "Default",
+      "positions": [{ "x": { "range": [15, 20] }, "y": 30 }]
+    }
+  ],
+
+  "_comment": "The position of a preset means the coordinates of the upper left corner!",
+  "presets": [
+    {
+      "name": "Lake",
+      "placement": null,
+      "position": { "x": 25, "y": 2 }
+    }
+  ],
+
+  "__guards": [
+    {
+      "id": 1,
+      "type": "patrol",
+      "spawn": { "x": 1, "y": 1 },
+      "path": [
+        { "x": 1, "y": 1 },
+        { "x": 8, "y": 8 },
+        { "x": 3, "y": 3 },
+        { "x": 1, "y": 3 }
+      ],
+      "dialogueOverride": null,
+      "facing": "Left"
+    },
+    {
+      "id": 0,
+      "type": "idle",
+      "spawn": { "x": 5, "y": 5 },
+      "dialogueOverride": null,
+      "facing": "Down"
+    }
+  ],
+
+  "guards": [
+    {
+      "id": 0,
+      "type": "idle",
+      "spawn": { "x": 5, "y": 5 },
+      "dialogueOverride": null,
+      "facing": "Down"
+    }
+  ],
+
+  "triggers": [
+    {
+      "name": "trigger_1",
+      "position": { "x": 11, "y": 11 },
+      
+      "flags": {
+        "repeatable": true,
+        "autoDelete": false
+      },
+
+      "conditions": {
+        "or": [
+          {"type": "interact"},
+          {"type": "steppedOn"},
+          {"and": [
+            {"type": "proximity", "range": 4},
+            {"type": "facing", "facing": "away"}
+          ]} 
+        ]
+      },
+
+      "events": [
+        {
+          "game:startDialogue": {
+            "type": "narration",
+            "lines": [
+              "Hiiiiii",
+              "I am interactable",
+              "A really long line to test out if wrapping works and also skipping because I am working sharklessly at these systems. Did you know that in Java, scrolling was automatic, but you couldn't scroll back up, good luck if you skipped. But now in C++ you can scroll! Amazing, isn't it?"
+            ],
+            "onEnd": [
+              {
+                "game:startDialogue": {
+                  "type": "narration",
+                  "lines": ["Hello Hiiii, I am the next line", "Hello again!"],
+                  "onEnd": [
+                    {
+                      "game:startDialogue": {
+                        "type": "choice",
+                        "question": "This is a question",
+                        "randomizeAllChoices": false,
+                        "choices": [
+                          {
+                            "text": "Set Tile",
+                            "actions": {
+                              "game:setTile": {
+                                "positions": [ {"x": 10, "y": 10} ],
+                                "name": "TownSoil",
+                                "placement": "Replace"
+                              }
+                            }
+                          },
+                          {
+                            "text": "Set Trigger",
+                            "actions": {
+                              "game:setTrigger": {
+                                "name": "trigger_2",
+                                "position": {"x": 10, "y": 10},
+                                
+                                "flags": {
+                                  "repeatable": true,
+                                  "autoDelete": false
+                                },
+
+                                "conditions": {
+                                  "type": "interact"
+                                },
+
+                                "events": {
+                                  "game:startDialogue": {
+                                    "type": "narration",
+                                    "lines": "I am a brand new trigger",
+                                    "onEnd": null
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "text": "Set Preset",
+                            "actions": {
+                              "game:setPreset": {
+                                "position": {"x": 15, "y": 15},
+                                "name": "lake",
+                                "placement": null
+                              }
+                            }
+                          },
+                          {
+                            "text":"4",
+                            "actions": null
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "trigger_4",
+      "position": { "x": 1, "y": 1 },
+      
+      "flags": {
+        "repeatable": true,
+        "autoDelete": false
+      },
+
+      "__conditions": {
+        "and": [
+          {"type": "cooldown", "time": {"seconds": 10} },
+          {"or": [
+            {"type": "interact"},
+            {"type": "steppedOn"}
+          ]}
+        ]
+      },
+
+      "conditions": {
+        "and": [
+          {"type": "maxActivations", "maxActivations": 5 },
+          {"type": "interact"}
+        ]
+      },
+
+      "events": [
+        {
+          "game:startDialogue": {
+            "type": "narration",
+            "lines": [
+              "Hiiiiii",
+              "I am interactable"
+            ],
+            "onEnd": null
+          }
+        }
+      ]
+    }
+  ]
+}

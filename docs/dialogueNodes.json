@@ -1,0 +1,64 @@
+{
+    // A choice dialogue node, with inlined choices and a question from a bank.
+    "type": "choice",
+    "question": {
+        "bankFile": "questions_easy.json", // The bank. Notice the ".json" at the end.
+        "count": 1, // Number of lines to get
+        "randomize": true // Randomisation happens before selecting just [count] lines
+    },
+    "randomizeAllChoices": true,
+    "choices": [
+        {
+            "text": "I lost my way...",
+            "actions": [{ "resumeGame": null }] // Actions will be detailed later.
+        },
+        {
+            "text": "[Surrender] Take me in.",
+            "actions": [{ "exitGame": null }]
+        }
+    ],
+    "onEnd": null // or vector of actions
+}
+{
+    // Node with inlined question, and 4 questions, all from banks.
+    "type": "choice",
+    "question": "What are you doing here?", // If it's a vector, or the bank file has count > 1, it will return the first one in the vector (after shuffling if randomize is true).
+    "choices": [
+        {
+            "bankFile": "responsesBad.json",
+            "count": 3,
+            "randomize": true,
+            "actions": [...] // One downside is that all 3 questions will share the same actions. This can be mitigated if you do "count": 1 and make 3 separate entries.
+        },
+        {
+            "bankFile": "responsesGood.json", 
+            "count": 1, 
+            "randomize": true, 
+            "actions": [...]
+        }
+    ],
+    "onEnd": [...]
+}
+{
+    // Node with narration, and inlined lines.
+ 	"type": "narration", 
+ 	"lines": [ "Hello", "This is AUST" ],
+    "onEnd": null
+}
+{
+    // Node with narration and lines from a bank. 
+ 	"type": "narration",
+ 	"lines": {
+ 		"bankFile": "NPC1_dialogue.json"
+ 	},
+    "onEnd": [...]
+}
+{
+    // There is one more mode, for when declaring dialogue for a map, guard or as event
+    "defaultDialogue": "nodeName",  // Notice the lack of '.json', this means this is a node. This is for a map.
+    "dialogueOverride": "nodeName", // Same thing, but for a guard.
+    "game:startDialogue": "nodeName"     // For an event
+}
+
+
+

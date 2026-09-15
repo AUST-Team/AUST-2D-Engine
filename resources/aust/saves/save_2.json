@@ -1,0 +1,111 @@
+{
+    "flags": "2,",
+    "guards": [
+        {
+            "id": 0,
+            "position": {
+                "x": 240,
+                "y": 240
+            }
+        }
+    ],
+    "id": 2,
+    "mapName": "DebugMap",
+    "player": {
+        "playerDirection": "down",
+        "playerPosition": {
+            "x": 528,
+            "y": 480
+        }
+    },
+    "presets": [
+        {
+            "mode": "default",
+            "position": {
+                "x": 15,
+                "y": 15
+            },
+            "preset": "lake"
+        }
+    ],
+    "tiles": [
+        {
+            "mode": "replace",
+            "position": {
+                "x": 10,
+                "y": 10
+            },
+            "tile": "TownSoil"
+        },
+        {
+            "mode": "replace",
+            "position": {
+                "x": 10,
+                "y": 10
+            },
+            "tile": "TownSoil"
+        }
+    ],
+    "timePlayedSeconds": 27,
+    "timesCaught": 1,
+    "timestamp": "2026-09-15 18:37:27",
+    "triggers": [
+        {
+            "exists": true,
+            "id": 5160836788379080415,
+            "name": "trigger_1",
+            "runtime": false,
+            "state": {
+                "createdTime": 12157,
+                "lastActivation": 20276,
+                "timesFired": 3,
+                "triggered": true
+            }
+        },
+        {
+            "exists": true,
+            "id": 5160831290820939360,
+            "name": "trigger_4",
+            "runtime": false,
+            "state": {
+                "createdTime": 12157,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            }
+        },
+        {
+            "exists": true,
+            "id": 5160837887890708626,
+            "name": "trigger_2",
+            "runtime": true,
+            "state": {
+                "createdTime": 23393,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            },
+            "template": {
+                "conditions": {
+                    "type": "interact"
+                },
+                "events": {
+                    "game:startDialogue": {
+                        "lines": "I am a brand new trigger",
+                        "onEnd": null,
+                        "type": "narration"
+                    }
+                },
+                "flags": {
+                    "autoDelete": false,
+                    "repeatable": true
+                },
+                "name": "trigger_2",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                }
+            }
+        }
+    ]
+}

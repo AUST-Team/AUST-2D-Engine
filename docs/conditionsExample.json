@@ -1,0 +1,44 @@
+{
+    // Conditions can have the following type
+
+    { "type": "interact" }, // Player must be one tile away to interact, and use the interact key (E or Z)
+    { "type": "steppedOn" }, // Player must be on the tile.
+    { "type": "proximity", "range": 4 } // Player within X tiles will trigger
+    { "type": "facing", "facing": "away" } // Player must be facing away. To not make it trigger triggers across the map, the ("facingRadius") in configuration.json gives the number of tiles the 
+    // player should be in (~proximity) for the facing check to occur (so by default, the facing check will only occur within 6 tiles).
+    { "type": "facing", "facing": "at" } // Same as above, but facing towards the trigger.
+    { "type": "timed", "mode": "before", "time": 10.5 } // This is a timed condition, with the 'before' mode. Don't worry, it's not the global time, instead, it's 10.5 seconds (here) after the trigger is created.
+    // So this condition is satisfied anytime before those 10.5 seconds pass. For obvious reasons, this shouldn't be used alone (as it will instantly trigger the trigger upon loading).
+    { "type": "timed", "mode": "after", "time": 10.5 } // So this condition is satisfied anytime afer those 10.5 seconds pass. This can be used alone!
+    // For a timer such as 'escape before', or other timed conditions.
+    { "type": "timed", "mode": "specific", "time": { "seconds": 1.2 } } // A specific timed condition. This one is a lot more niche, as this condition is true for exactly one 'frame' (or update cycle).
+    // That moment is exactly when the 1.2 seconds after trigger creation have passed.
+    { "type": "timed", "mode": "interval", "start": { "seconds": 1.2 }, "stop": { "ms": 5000 } } // Similar to the others, but an interval, here between 1.2 and 5 seconds the trigger has been created.
+    { "type": "cooldown", "time": 5 } // A cooldown condition. After being activated, the trigger will be able to be re-activated after X time. For obvious reasons, if the trigger is set as non-repeatable,
+    // this does nothing.
+    { "type": "maxActivations", "maxActivations": 5 }, // A max number of activations. For obvious reasons, this also does nothing if the trigger is set as non-repeatable.
+
+    // Now these are the base types, but I wanted to make it so you can combine them, therefore, composite types!
+
+    { "or": [...] }
+    { "and": [...] }
+    { "not": {...} } // Only 1 element allowed. It will not crash the engine if there are multiple, but it will only return the negated condition of the first element, and raise warnings in the console.
+
+    {
+        "or": [
+          {"type": "interact"},
+          {"type": "steppedOn"},
+          {"and": [
+            {"type": "proximity", "range": 4},
+            {"type": "facing", "facing": "away"}
+          ]} 
+        ]
+    } // -> interacted OR stepped on OR (within 4 tiles AND facing away)
+
+    {
+        "and": [
+            { "type": "timed", "mode": "after", "time": 10.5 },
+            { "not": {"type": "steppedOn"} }, 
+        ]
+    } // -> after 10.5 seconds AND not stepped on.
+}

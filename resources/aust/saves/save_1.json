@@ -1,0 +1,44 @@
+{
+    "flags": "2,",
+    "guards": [],
+    "id": 1,
+    "mapName": "DebugMap",
+    "player": {
+        "playerDirection": "right",
+        "playerPosition": {
+            "x": 0,
+            "y": 48
+        }
+    },
+    "presets": [],
+    "tiles": [],
+    "timePlayedSeconds": 11,
+    "timesCaught": 0,
+    "timestamp": "2026-09-12 17:43:23",
+    "triggers": [
+        {
+            "exists": true,
+            "id": 5160836788379080415,
+            "name": "trigger_1",
+            "runtime": false,
+            "state": {
+                "createdTime": 0,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            }
+        },
+        {
+            "exists": true,
+            "id": 5160831290820939360,
+            "name": "trigger_4",
+            "runtime": false,
+            "state": {
+                "createdTime": 0,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            }
+        }
+    ]
+}

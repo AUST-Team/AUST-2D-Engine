@@ -1,0 +1,35 @@
+{
+    // These are the busses, they are basically 'tags' that you can put audio in and play all at once.
+    "busses": [ 
+        "Master",
+        "Music",
+        "SFX",
+        "UI",
+        "Pause"
+    ],
+
+    "sounds": [
+        {
+            "name": "button_click", // Mandatory. This will be the name that will be referenced everywhere else.
+            "bus": "UI", // Mandatory
+            "file": "ui/click_002.ogg", // Mandatory, will be parsed as within the 'audio' directory; so in this case it would be aust/resources/audio/ui/click_002.ogg.
+            "playback": { // Mandatory.
+                "volume": 0.1, // Volume, between 0 and 1.
+                "loop": false, // If the audio should loop once it starts being played.
+                "fadeIn": 0, // FadeIn; see 'Time in AUST' within the documentation file to see how to declare time.
+                "loopCount": null // Number of loops, -1 for infinite looping, or a positive number of a set number of loops. Loop flag must be set. If loop flag is false, can be ommited.
+            }
+        },
+        {
+            "name": "map1music",
+            "bus": "Music",
+            "file": "music/debug.mp3",
+            "playback": {
+                "volume": 0.05,
+                "loop": true,
+                "fadeIn": 0,
+                "loopCount": -1 // Infinite looping. 
+            }
+        }
+    ]
+}

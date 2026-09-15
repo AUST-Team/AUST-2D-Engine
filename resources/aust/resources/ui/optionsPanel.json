@@ -1,0 +1,174 @@
+{
+    "panel": {
+        "element": {
+            "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+            "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+            "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+        },
+        "onEnter": null,
+        "onExit": null
+    },
+    "elements": [
+        {
+            "type": "LabelCheckbox",
+            "id": "fullscreen_toggle",
+            "element": {
+                "bounds": { "x": 150, "y": 80, "w": 200, "h": 30 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Fullscreen"
+            },
+            "textStyle": {
+                "fontFamily": "button",
+                "fontSize": 24.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "boxColor": [200, 200, 200, 255],
+            "checkColor": [ 50, 200, 50, 255 ],
+            "boxSize": 20.0,
+            "spacing": 10.0,
+            "initial": false,
+            "binding": {
+                "type": "system",
+                "key": "__isFullscreen"
+            },
+            "onToggle": [
+                { "toggleFullscreen": null },
+                { "playAudio": "checkbox_toggle" }
+            ]
+        },
+        {
+            "type": "TextField",
+            "id": "options_audio_field",
+            "element": {
+                "bounds": { "x": 550, "y": 75, "w": 60, "h": 40 },
+                "backgroundColor": { "r": 30, "g": 30, "b": 30, "a": 255 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "textElement": {
+                "text": "100"
+            },
+            "textStyle": {
+                "fontFamily": "label",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "placeholderText": null,
+            "maxLength": 3,
+            "dataBindKey": null,
+            "numericOnly": true,
+            "showSlider": true,
+            "blinkTime": { "ms": 500.0 },
+            "textPadding": 5.0,
+            "onTextInputStart": null,
+            "onTextInputStop": [
+                { "setMasterVolume": null }
+            ],
+            "binding": {
+                "type": "system",
+                "key": "__masterVolume"
+            },
+            "cursorColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+            "slider": {
+                "sliderTrackColor": { "r": 80, "g": 80, "b": 80, "a": 255 },
+                "sliderActiveColor": { "r": 0, "g": 180, "b": 255, "a": 255 },
+                "handleColor": { "r": 240, "g": 240, "b": 240, "a": 255 },
+                "sliderPadding": 10.0,
+                "sliderSize": { "w": 120, "h": 4 },
+                "handleSize": { "w": 10, "h": 16 }
+            }
+        },
+        {
+            "type": "Label",
+            "id": "options_audio_label",
+            "element": {
+                "bounds": { "x": 450, "y": 75, "w": 60, "h": 40 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Volume:"
+            },
+            "textStyle": {
+                "fontFamily": "label",
+                "fontSize": 24.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            }
+        },
+        {
+            "type": "Table",
+            "id": "controls_table",
+            "element": {
+                "bounds": { "x": 80, "y": 140, "w": 640, "h": 300 },
+                "backgroundColor": { "r": 50, "g": 53, "b": 62, "a": 255 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "header": {
+                "fontFamily": "table",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "backgroundColor": { "r": 60, "g": 63, "b": 72 , "a": 255 },
+                "textAlignment": null
+            },
+            "cell": {
+                "fontFamily": "table",
+                "fontSize": 20.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0 , "a": 0 },
+                "textAlignment": null
+            },
+            "columns": [
+                { "title": "Action", "width": 0.5, "textAlignment": {"horizontal": "left", "vertical": "middle" } },
+                { "title": "Key", "width": 0.5, "textAlignment": {"horizontal": "left", "vertical": "middle" } }
+            ],
+            "dataSource": {
+                "type": "inline",
+                "data": [
+                    [ "Movement", "W / A / S / D / Arrow keys" ],
+                    [ "Interact", "E / Z" ],
+                    [ "Pause", "Esc" ],
+                    [ "Dialogue Scrolling", "Movement Keys / Mouse Wheel" ],
+                    [ "Dialogue Choice Selection", "Movement Keys" ],
+                    [ "Dialogue Choice Confirmation", "Interact Keys" ]
+                ]
+            }
+        },
+        {
+            "type": "Button",
+            "id": "back_button_options",
+            "element": {
+                "bounds": { "x": 340, "y": 450, "w": 120, "h": 35 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Back"
+            },
+            "textStyle": {
+                "fontFamily": "button",
+                "fontSize": 24.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "onClick": [
+                { "changePanel": "main" },
+                { "playAudio": "button_click" }
+            ],
+            "onMouseEnter": {
+                "changeStyle": {
+                    "backgroundColor": [255, 0, 61, 255]
+                }
+            },
+            "onMouseExit": {
+                "changeStyle": {
+                    "backgroundColor": [0, 0, 0, 0]
+                }
+            }
+        }
+    ]
+}

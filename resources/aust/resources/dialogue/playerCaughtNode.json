@@ -1,0 +1,35 @@
+{
+    "type": "choice",
+    "question": {
+        "bankFile": "questions.json",
+        "count": 1,
+        "randomize": true
+    },
+    "randomizeAllChoices": true,
+    "choices": [
+        {
+            "bankFile": "responsesBad.json",
+            "count": 3,
+            "randomize": true,
+            "actions": [{"playCutscene": "badEnd"}]
+        },
+        {
+            "bankFile": "responsesGood.json",
+            "count": 1,
+            "randomize": true,
+            "actions": [
+                {
+                    "game:checkPlayerCaught": {
+                        "below": [
+                            { "game:startDialogue": "okNode" }
+                        ],
+                        "above": [
+                            { "playCutscene": "badEnding" }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "onEnd": null
+}

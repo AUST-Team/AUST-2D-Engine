@@ -1,0 +1,103 @@
+{
+    "flags": "2,", // Flags, serialized as hex. Flags must be defined in flags.json. Note that you cannot add flags at runtime (yet).
+    "guards": [ // Array of saved guard positions.
+        {
+            "id": 0, // Id of the guard. Guard saving is very finnicky, so great care to make the IDs match up (I will come up with a better system).
+            "position": {
+                "x": 240,
+                "y": 240
+            }
+        }
+    ],
+    "id": 2, // ID of the save.
+    "mapName": "DebugMap", // Map this saved was made on.
+    "player": {
+        "playerDirection": "down", // Direction of the player.
+        "playerPosition": {
+            "x": 528, // Position of the player.
+            "y": 480
+        }
+    },
+    "presets": [ // Vector of runtime placed presets.
+        {
+            "mode": "default", // Mode
+            "position": { // Position
+                "x": 15,
+                "y": 15
+            },
+            "preset": "lake" // Name
+        }
+    ],
+    "tiles": [ // Vector of runtime placed tiles
+        {
+            "mode": "replace", // Mode
+            "position": { // Position
+                "x": 10,
+                "y": 10
+            },
+            "tile": "TownSoil" // Name
+        }
+    ],
+    "timePlayedSeconds": 27, // Time played in seconds.
+    "timesCaught": 1, // Number of times caught.
+    "timestamp": "2026-09-15 18:37:27", // Timestamp.
+    "triggers": [ // Vector of triggers.
+        {
+            "exists": true, // You may wonder, why does this flag exist (get it?). When a map is loaded, it is loaded as it is defined in the map JSON. And some triggers may be removed at runtime.
+            "id": 5160836788379080415, // ID of the trigger (hashed name)
+            "name": "trigger_1", // Name
+            "runtime": false, // Runtime or not
+            "state": {
+                "createdTime": 12157,       // When this trigger was created. Miliseconds!
+                "lastActivation": 20276,    // Last activation time. Miliseconds!
+                "timesFired": 3,            // Times fired
+                "triggered": true           // Triggered or not
+            }
+        },
+        {
+            "exists": true,
+            "id": 5160831290820939360,
+            "name": "trigger_4",
+            "runtime": false,
+            "state": {
+                "createdTime": 12157,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            }
+        },
+        {
+            "exists": true,
+            "id": 5160837887890708626,
+            "name": "trigger_2",
+            "runtime": true, // A runtime trigger!
+            "state": {
+                "createdTime": 23393,
+                "lastActivation": 0,
+                "timesFired": 0,
+                "triggered": false
+            },
+            "template": { // This is basically how runtime triggers get serialized in order to recreate them when the map loads.
+                "conditions": {
+                    "type": "interact"
+                },
+                "events": {
+                    "game:startDialogue": {
+                        "lines": "I am a brand new trigger",
+                        "onEnd": null,
+                        "type": "narration"
+                    }
+                },
+                "flags": {
+                    "autoDelete": false,
+                    "repeatable": true
+                },
+                "name": "trigger_2",
+                "position": {
+                    "x": 10,
+                    "y": 10
+                }
+            }
+        }
+    ]
+}

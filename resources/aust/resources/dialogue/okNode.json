@@ -1,0 +1,11 @@
+{
+    "type": "narration",
+    "lines": {
+        "bankFile": "guardResponse.json",
+        "count": 1,
+        "randomize": true
+    },
+    "onEnd": {
+        "game:setCaughtGuardOnCooldown": 5000.0
+    }
+}

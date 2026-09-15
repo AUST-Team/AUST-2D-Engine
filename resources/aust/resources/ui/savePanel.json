@@ -1,0 +1,134 @@
+{
+    "@defines": {
+        "_SLOT_HEIGHT": 110,
+        "_SLOT_PADDING": 10,
+        "_STARTING_Y": 100
+    },
+    "panel": {
+        "element": {
+            "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+            "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+            "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+        },
+        "onEnter": null,
+        "onExit": null
+    },
+    "elements": [
+        {
+            "type": "SaveSlot",
+            "id": "save_slot_1",
+            "element": {
+                "bounds": {"x": 150, "y": "_STARTING_Y", "w": 500, "h": "_SLOT_HEIGHT"},
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "textStyle": {
+                "fontFamily": "save",
+                "fontSize": 16.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "mode": "save",
+            "saveId": 1,
+            "buttons": {
+                "onMouseEnter": {
+                    "changeStyle": { "backgroundColor": [255, 0, 61, 255] }
+                },
+                "onMouseExit": {
+                    "changeStyle": { "backgroundColor": [0, 0, 0, 0] }
+                },
+                "onClick": {
+                    "playAudio": "button_click"
+                }
+            }
+        },
+        {
+            "type": "SaveSlot",
+            "id": "save_slot_2",
+            "element": {
+                "bounds": {"x": 150, "y": "_STARTING_Y + _SLOT_PADDING + _SLOT_HEIGHT", "w": 500, "h": "_SLOT_HEIGHT"},
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "textStyle": {
+                "fontFamily": "save",
+                "fontSize": 16.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "mode": "save",
+            "saveId": 2,
+            "buttons": {
+                "onMouseEnter": {
+                    "changeStyle": { "backgroundColor": [255, 0, 61, 255] }
+                },
+                "onMouseExit": {
+                    "changeStyle": { "backgroundColor": [0, 0, 0, 0] }
+                },
+                "onClick": {
+                    "playAudio": "button_click"
+                }
+            }
+        },
+        {
+            "type": "SaveSlot",
+            "id": "save_slot_3",
+            "element": {
+                "bounds": {"x": 150, "y": "_STARTING_Y + 2 * _SLOT_PADDING + 2 * _SLOT_HEIGHT", "w": 500, "h": "_SLOT_HEIGHT"},
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 255, "g": 255, "b": 255, "a": 255 }
+            },
+            "textStyle": {
+                "fontFamily": "save",
+                "fontSize": 16.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "mode": "save",
+            "saveId": 3,
+            "buttons": {
+                "onMouseEnter": {
+                    "changeStyle": { "backgroundColor": [255, 0, 61, 255] }
+                },
+                "onMouseExit": {
+                    "changeStyle": { "backgroundColor": [0, 0, 0, 0] }
+                },
+                "onClick": {
+                    "playAudio": "button_click"
+                }
+            }
+        },
+        {
+            "type": "Button",
+            "id": "back_button_save",
+            "element": {
+                "bounds": { "x": 340, "y": 540, "w": 120, "h": 40 },
+                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+            },
+            "textElement": {
+                "text": "Back"
+            },
+            "textStyle": {
+                "fontFamily": "button",
+                "fontSize": 24.0,
+                "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                "textAlignment": { "horizontal": "center", "vertical": "middle" }
+            },
+            "onClick": [
+                { "playAudio": "button_click"},
+                { "changePanel": "main" }
+            ],
+            "onMouseEnter": {
+                "changeStyle": {
+                    "backgroundColor": [255, 0, 61, 255]
+                }
+            },
+            "onMouseExit": {
+                "changeStyle": {
+                    "backgroundColor": [0, 0, 0, 0]
+                }
+            }
+        }
+    ]
+}

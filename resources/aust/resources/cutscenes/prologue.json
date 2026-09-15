@@ -1,0 +1,73 @@
+{
+    "mainPanel": "main",
+    "panels": {
+        "main": {
+            "panel": {
+                "element": {
+                    "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+                    "backgroundColor": { "r": 50, "g": 54, "b": 62, "a": 255 },
+                    "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                },
+                "onEnter": null,
+                "onExit": null
+            },
+            "elements": [
+                {
+                    "type": "Label",
+                    "id": "skip_label",
+                    "element": {
+                        "bounds": { "x": 320, "y": 550, "w": 160, "h": 20 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textElement": {
+                        "text": "Click to skip"
+                    },
+                    "textStyle": {
+                        "fontFamily": "hint",
+                        "fontSize": 20.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 150 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    }
+                },
+                {
+                    "type": "CutsceneWriter",
+                    "id": "cutscene_writer",
+                    "element": {
+                        "bounds": { "x": 0, "y": 0, "w": 800, "h": 600 },
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 0 },
+                        "borderColor": { "r": 0, "g": 0, "b": 0, "a": 0 }
+                    },
+                    "textStyle": {
+                        "fontFamily": "cutscene",
+                        "fontSize": 35.0,
+                        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+                        "textAlignment": { "horizontal": "center", "vertical": "middle" }
+                    },
+                    "pauseTime": {"ms": 2000.0},
+                    "fadeSpeed": 0.001,
+                    "typewriterSpeed": { "ms": 40.0 },
+                    "skipLabel": "skip_label",
+                    "lines": [
+                        "The war ended. Your country, Faloria, is in chaos.",
+                        "After several power struggles, King Patrick takes control over the country.",
+                        "Famine ravages the country, which makes the king paranoid about a possible coup.",
+                        "Due to this, rationing is introduced, coupled with repossessing farmers' lands.",
+                        "They call this program \"AUST\".",
+                        "A curfew is imposed, enforced by the king's royal guards, the so called \"Unity Guards\".",
+                        "You are a mere farmer. And now you work everyday on land that was once yours.",
+                        "Perhaps, one day, your country will return to the pre-war democratic regime.",
+                        "Or perhaps, you will use this opportunity to lift yourself up the social ladder.",
+                        "The choice is yours."
+                    ],
+                    "onComplete": {
+                        "startGame": null
+                    }
+                }
+            ]
+        },
+        "input": {
+            "file": "nameInputPanel.json"
+        }
+    }
+}

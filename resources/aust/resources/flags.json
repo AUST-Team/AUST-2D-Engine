@@ -1,0 +1,5 @@
+[
+    { "name": "hasSword",                 "initial": false  },
+    { "name": "openedDoor",               "initial": true   },
+    { "name": "defeatedBoss",             "initial": false  }
+]
